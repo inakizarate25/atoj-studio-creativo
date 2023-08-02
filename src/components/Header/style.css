@@ -1,0 +1,151 @@
+
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	color: var(--mainColor);
+	z-index: 1000;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-bottom: 30px;
+	padding: 0 30px;
+	border-bottom: solid 3px var(--secondaryColor);
+
+}
+
+nav .links {
+    width: 400px;
+	color: var(--textColor);
+	border-bottom: solid var(--textColor) 1px;
+	font-weight: 600;
+	text-decoration: none;
+	font-size: 2rem;
+
+
+}
+
+
+nav .links:hover {
+	color: var(--secondaryColor);
+	transition: all 0.6s ;
+
+}
+.active{
+	color: var(--secondaryColor);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--secondaryColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+nav{
+	gap: 1.5rem;
+}
+.logo {
+	color: var(--mainColor);
+	font-size: 2rem;
+	text-decoration: none;
+}
+header div,
+nav {
+	display: flex;
+	align-items: center;
+
+}
+
+
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100vh;
+		width: 100%;
+		padding: 0 30%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		gap: 30%;
+		background-color: var(--mainColor);
+		transition: .2s;
+		opacity: 0;
+	}
+	@media screen and (max-width: 768px) {
+		nav{
+			flex-wrap: wrap;
+		}
+	}
+	.div-links{
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+		opacity: 1;
+		transition:all .3s ;
+	}
+
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 10px;
+		right: 30px;
+		color: var(--secondaryColor);
+	
+	}
+
+	nav .links {
+		font-size: 2.8rem;
+	}
+.redes {
+	color: var(--textColor);
+	font-size: 2rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	height: 200px;
+}
+.redes span {
+	width: 500px;
+	height: 200px;
+	padding: 8px 10px;
+	text-align: start;
+	font-family: var(--font-secundaria);
+	font-size: 1.5rem;
+}
+.div-redes {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	gap: 30px;
+	padding: 0px 10px;
+
+}
+.div-redes a {
+	color: var(--secondaryColor);
+}
+.div-redes a:hover {
+	transform: scale(1.2);
+	transition: all .2s;
+}
