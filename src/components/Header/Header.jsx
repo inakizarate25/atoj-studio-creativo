@@ -5,44 +5,30 @@ import "./style.css";
 
 function Header() {
 
-
-	
 	const navRef = useRef();
 
+	// MOSTRAR Y OCULTAR NAVBAR
 	const showNavbar = () => {
 		navRef.current.classList.toggle(
 			"responsive_nav"
 		);
-    let link = document.querySelector(".link");
-    let link1 = document.querySelector(".link1");
-    let link2 = document.querySelector(".link2");
-    let link3 = document.querySelector(".link3");
-
-    link.addEventListener("click", () => {
-      navRef.current.classList.remove("responsive_nav");
-    })
-    link1.addEventListener("click", () => {
-      navRef.current.classList.remove("responsive_nav");
-    })
-    link2.addEventListener("click", () => {
-      navRef.current.classList.remove("responsive_nav");
-    })
-    link3.addEventListener("click", () => {
-      navRef.current.classList.remove("responsive_nav");
-    })
-
-    
 	};
+	const closeNavbar = () => {
+		navRef.current.classList.remove(
+			"responsive_nav"
+			);
+	}
+
 
 	return (
 		<header>
 			<Link to={`/`} className="logo">LOGO</Link>
 			<nav ref={navRef}>
 				<div className="div-links">
-				<NavLink to={"/"} className="link links" href="#inicio">HOME</NavLink>
-				<NavLink to={"/about"}className="link1 links" href="#planes">ABOUT</NavLink>
-				<NavLink to={"/servicios"} className="link2 links" href="#blogs">SERVICES</NavLink>
-                <NavLink to={"/contacto"}className="link3 links"href="#blogs">CONTACT</NavLink>
+				<NavLink to={"/"} className="links" href="#inicio" onClick={closeNavbar}>HOME</NavLink>
+				<NavLink to={"/about"}className="links" href="#planes" onClick={closeNavbar}>ABOUT</NavLink>
+				<NavLink to={"/servicios"} className="links" href="#blogs" onClick={closeNavbar}>SERVICES</NavLink>
+                <NavLink to={"/contacto"}className="links"href="#blogs" onClick={closeNavbar}>CONTACT</NavLink>
 				</div>
 				
 			  
