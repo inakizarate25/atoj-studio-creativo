@@ -1,8 +1,11 @@
-import React from 'react'
+import AnimatedPages from '../AnimatedPages/AnimatedPages'
 
 const Home = () => {
   return (
-    <h2>Home</h2>
+    <AnimatedPages>
+      <h2>Home</h2>
+    </AnimatedPages>
+   
   )
 }
 

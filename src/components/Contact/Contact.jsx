@@ -1,8 +1,10 @@
-import React from 'react'
+import AnimatedPages from '../AnimatedPages/AnimatedPages'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <AnimatedPages>
+    <h2>Contact</h2>
+    </AnimatedPages>
   )
 }
 

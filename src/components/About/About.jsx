@@ -1,8 +1,10 @@
-import React from 'react'
+import AnimatedPages from '../AnimatedPages/AnimatedPages'
 
 const About = () => {
   return (
-    <div>About</div>
+    <AnimatedPages>
+    <h2>About</h2>
+    </AnimatedPages>
   )
 }
 
