@@ -1,9 +1,7 @@
-import './style.css'
-
 const Footer = () => {
   return (
     <footer>
-hhhhhhh
+
     </footer>
   )
 }
