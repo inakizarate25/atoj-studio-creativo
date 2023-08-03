@@ -3,8 +3,10 @@ import { FaBars, FaTimes,FaInstagram, FaTiktok } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import "./style.css";
 
-function Header() {
+const ig = "https://www.instagram.com/atojstudiocreativo/"
+const tik = "https://www.tiktok.com/@atojstudiocreativo?_t=8dBuO8TZg6o&_r=1"
 
+function Header() {
 	const navRef = useRef();
 
 	// MOSTRAR Y OCULTAR NAVBAR
@@ -42,8 +44,8 @@ function Header() {
 				<div className="redes">
 				<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, necessitatibus.</span>
 				<div className="div-redes">
-					<a href="https://www.instagram.com/atojstudiocreativo/"><FaInstagram/></a>
-					<a href="https://www.tiktok.com/@atojstudiocreativo?_t=8dBuO8TZg6o&_r=1"><FaTiktok/></a>
+					<a href={ig}><FaInstagram/></a>
+					<a href={tik}><FaTiktok/></a>
 				</div>
 			</div>
 			</nav>
