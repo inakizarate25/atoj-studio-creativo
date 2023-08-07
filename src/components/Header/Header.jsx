@@ -40,13 +40,7 @@ function Header() {
 					<FaTimes />
 </button> */}
 
-				<div className="redes">
-				<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, necessitatibus.</span>
-				<div className="div-redes">
-					<a href="https://www.instagram.com/atojstudiocreativo/"><FaInstagram/></a>
-					<a href="https://www.tiktok.com/@atojstudiocreativo?_t=8dBuO8TZg6o&_r=1"><FaTiktok/></a>
-				</div>
-			</div>
+			
 			</nav>
 			<button
 				className="nav-btn"
