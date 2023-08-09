@@ -6,7 +6,7 @@ header {
 	height: 60px;
 	color: var(--mainColor);
 	z-index: 10000;
-	width: 100vw;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -34,10 +34,10 @@ nav {
 	background-color: var(--mainColor);
 	transition: .5s ;
 	z-index: 100;
-	opacity: 0;
+	visibility: hidden;
 }
 header .responsive_nav {
-	opacity: 1;
+	visibility: inherit;
 	transition: all .5s;
 	align-items: center;
 	justify-content: space-around;
@@ -82,8 +82,7 @@ header .nav-btn {
 	justify-content: space-around;
 	background-color: var(--textColor);
 	transition: .1s ;
-	gap: 50px;
-	opacity: 1;
+visibility: inherit;
 	}
 	header .nav-btn {
 		display: none;
@@ -93,6 +92,6 @@ header .nav-btn {
 		font-size: 1rem;
 	}
 	.links:hover{
-		color: var(--secondaryColor);
+		color: #8b8989;
 	}
 }

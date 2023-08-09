@@ -27,10 +27,10 @@ function Header() {
 			<a href="#inicio"  className="logo">LOGO</a>
 			<nav ref={navRef}>
 			
-				<a href="#home" className="links" onClick={closeNavbar}>HOME</a>
-				<a href="#about" className="links" onClick={closeNavbar}>ABOUT</a>
-				<a href="#servicios" className="links" onClick={closeNavbar}>SERVICES</a>
-                <a href="#contacto"  className="links" onClick={closeNavbar}>CONTACT</a>
+				<a href="#home" className="links" onClick={closeNavbar}>Home</a>
+				<a href="#about" className="links" onClick={closeNavbar}>About</a>
+				<a href="#servicios" className="links" onClick={closeNavbar}>Services</a>
+                <a href="#contacto"  className="links" onClick={closeNavbar}>Contact</a>
 
 {/* 				
 			  
