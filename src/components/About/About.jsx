@@ -1,10 +1,10 @@
-import AnimatedPages from '../AnimatedPages/AnimatedPages'
+
 
 const About = () => {
   return (
-    <AnimatedPages>
+    <section id="about">
     <h2>About</h2>
-    </AnimatedPages>
+    </section>
   )
 }
 

@@ -10,9 +10,8 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	margin-bottom: 30px;
 	padding: 0 30px;
-	border-bottom: solid 3px var(--secondaryColor);
+	border-bottom: solid 1px var(--secondaryColor);
 	background-color: var(--textColor);
 }
 .logo {
@@ -33,13 +32,13 @@ nav {
 	align-items: center;
 	justify-content: space-around;
 	background-color: var(--mainColor);
-	transition: 1s ;
+	transition: .5s ;
 	z-index: 100;
 	opacity: 0;
 }
 header .responsive_nav {
 	opacity: 1;
-	transition: all 1s;
+	transition: all .5s;
 	align-items: center;
 	justify-content: space-around;
 	height: 360px;

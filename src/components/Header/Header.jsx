@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { FaBars, FaTimes,FaInstagram, FaTiktok } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+
 import "./style.css";
 
 const ig = "https://www.instagram.com/atojstudiocreativo/"
@@ -24,13 +24,13 @@ function Header() {
 
 	return (
 		<header>
-			<Link to={`/`} className="logo">LOGO</Link>
+			<a href="#inicio"  className="logo">LOGO</a>
 			<nav ref={navRef}>
 			
-				<NavLink to={"/"} className="links" href="#inicio" onClick={closeNavbar}>HOME</NavLink>
-				<NavLink to={"/about"}className="links" href="#planes" onClick={closeNavbar}>ABOUT</NavLink>
-				<NavLink to={"/servicios"} className="links" href="#blogs" onClick={closeNavbar}>SERVICES</NavLink>
-                <NavLink to={"/contacto"}className="links"href="#blogs" onClick={closeNavbar}>CONTACT</NavLink>
+				<a href="#home" className="links" onClick={closeNavbar}>HOME</a>
+				<a href="#about" className="links" onClick={closeNavbar}>ABOUT</a>
+				<a href="#servicios" className="links" onClick={closeNavbar}>SERVICES</a>
+                <a href="#contacto"  className="links" onClick={closeNavbar}>CONTACT</a>
 
 {/* 				
 			  

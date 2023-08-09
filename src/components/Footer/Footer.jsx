@@ -1,7 +1,9 @@
 const Footer = () => {
   return (
     <footer>
-
+        <h2>
+            &copy; 2022
+        </h2>
     </footer>
   )
 }
