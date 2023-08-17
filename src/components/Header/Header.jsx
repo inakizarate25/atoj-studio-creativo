@@ -1,13 +1,13 @@
-import { useEffect, useRef } from "react";
-import { FaBars, FaTimes,FaInstagram, FaTiktok } from "react-icons/fa";
-
+import { useRef, useState } from "react";
+import { FaBars, FaTimes} from "react-icons/fa";
+import logo from '../../assets/LOGO ATOJ.png'
 import "./style.css";
 
-const ig = "https://www.instagram.com/atojstudiocreativo/"
-const tik = "https://www.tiktok.com/@atojstudiocreativo?_t=8dBuO8TZg6o&_r=1"
+
 
 function Header() {
 	const navRef = useRef();
+	const [navBtnActive, setNavBtnActive] = useState(false);
 
 
 	// MOSTRAR Y OCULTAR NAVBAR
@@ -15,37 +15,31 @@ function Header() {
 		navRef.current.classList.toggle(
 			"responsive_nav"
 		);
+		setNavBtnActive(prevState => !prevState)
 	};
 	const closeNavbar = () => {
 		navRef.current.classList.remove(
 			"responsive_nav"
 			);
+			setNavBtnActive(false);
 	}
 
 	return (
 		<header>
-			<a href="#inicio"  className="logo">LOGO</a>
+			<a href="#inicio"  className="logo"><img src={logo} alt="atoj studio" /></a>
 			<nav ref={navRef}>
 			
 				<a href="#home" className="links" onClick={closeNavbar}>Home</a>
 				<a href="#about" className="links" onClick={closeNavbar}>About</a>
 				<a href="#servicios" className="links" onClick={closeNavbar}>Services</a>
+				<a href="#portfolio" className="links" onClick={closeNavbar}>Portfolio</a>
                 <a href="#contacto"  className="links" onClick={closeNavbar}>Contact</a>
-
-{/* 				
-			  
-				<button
-					className="nav-btn nav-close-btn"
-					onClick={showNavbar}>
-					<FaTimes />
-</button> */}
-
-			
 			</nav>
-			<button
-				className="nav-btn"
-				onClick={showNavbar} >
-				<FaBars />
+
+			<button className='nav-btn' onClick={showNavbar} >		
+				{
+					navBtnActive ? <FaTimes /> : <FaBars />
+				}
 			</button>
 
 			

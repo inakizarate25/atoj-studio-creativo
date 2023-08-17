@@ -3,7 +3,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 60px;
+	height: 80px;
 	color: var(--mainColor);
 	z-index: 10000;
 	width: 100%;
@@ -11,19 +11,15 @@ header {
 	top: 0;
 	left: 0;
 	padding: 0 30px;
-	border-bottom: solid 1px var(--secondaryColor);
+	border-bottom: solid 1px var(--mainColor);
 	background-color: var(--textColor);
 }
-.logo {
-	color: var(--mainColor);
-	font-size: 2rem;
-	text-decoration: none;
-	font-weight: 600;
-	cursor: pointer;
+.logo > img {
+	width: 100px;
 }
 nav {
 	position: fixed;
-	top: 60px;
+	top: 80px;
 	left: 0;
 	height: 0px;
 	width: 100%;
@@ -35,6 +31,7 @@ nav {
 	transition: .5s ;
 	z-index: 100;
 	visibility: hidden;
+	opacity: 0;
 }
 header .responsive_nav {
 	visibility: inherit;
@@ -42,6 +39,8 @@ header .responsive_nav {
 	align-items: center;
 	justify-content: space-around;
 	height: 360px;
+	opacity: 1;
+	visibility: inherit;
 }
 header .nav-btn {
 	padding: 5px;
@@ -52,13 +51,10 @@ header .nav-btn {
 	color: var(--mainColor);
 	opacity: 1;
 	font-size: 1.8rem;
+	transition: all .4s;
 }
-/* nav .nav-close-btn {
-	position: absolute;
-	top: 10px;
-	right: 30px;
-	color: var(--secondaryColor);
-} */
+
+
 .links {
 	color: var(--textColor);
 	font-size: 1.3rem;
@@ -82,7 +78,8 @@ header .nav-btn {
 	justify-content: space-around;
 	background-color: var(--textColor);
 	transition: .1s ;
-visibility: inherit;
+    visibility: inherit;
+
 	}
 	header .nav-btn {
 		display: none;
