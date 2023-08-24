@@ -69,13 +69,15 @@ header .nav-btn {
 	z-index: -1;
 	transition: all .3s;
     border-bottom: 1px solid black;
-	display: none;
+	visibility: hidden;
+	opacity: 0;
 }
 .last{
 	border-bottom: none;
 }
 .active{
-display: flex;
+visibility: inherit;
+opacity: 1;
 transition-delay: .1s;
 }
 
