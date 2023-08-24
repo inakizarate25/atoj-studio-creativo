@@ -5,17 +5,17 @@ header {
 	justify-content: space-between;
 	height: 80px;
 	color: var(--mainColor);
-	z-index: 10000;
+	z-index: 100;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
 	padding: 0 30px;
-	border-bottom: solid 1px var(--mainColor);
-	background-color: var(--textColor);
+	background-color: var(--secondaryColor);
 }
 .logo > img {
 	width: 100px;
+	z-index: 10000;
 }
 nav {
 	position: fixed;
@@ -28,19 +28,23 @@ nav {
 	align-items: center;
 	justify-content: space-around;
 	background-color: var(--mainColor);
-	transition: .5s ;
-	z-index: 100;
-	visibility: hidden;
+	transition:all .3s ;
+	z-index: 50;
 	opacity: 0;
+	visibility: hidden;
 }
 header .responsive_nav {
 	visibility: inherit;
-	transition: all .5s;
+	transition: all .3s;
 	align-items: center;
 	justify-content: space-around;
-	height: 360px;
+	height:364px;
 	opacity: 1;
 	visibility: inherit;
+	position: absolute;
+    top: 80px;
+	left: 0;
+
 }
 header .nav-btn {
 	padding: 5px;
@@ -48,10 +52,10 @@ header .nav-btn {
 	background: transparent;
 	border: none;
 	outline: none;
-	color: var(--mainColor);
+	color: #000 ;
 	opacity: 1;
 	font-size: 1.8rem;
-	transition: all .4s;
+	transition: all .3s;
 }
 
 
@@ -61,8 +65,19 @@ header .nav-btn {
 	text-decoration: none;
 	transition: all .4s;
 	font-weight:600;
+	padding: 33px 50%;
+	z-index: -1;
+	transition: all .3s;
+    border-bottom: 1px solid black;
+	display: none;
 }
-
+.last{
+	border-bottom: none;
+}
+.active{
+display: flex;
+transition-delay: .1s;
+}
 
 @media screen and (min-width:1024px) {
 	header{
@@ -72,21 +87,29 @@ header .nav-btn {
 	position: relative;
 	top: 0;
 	height: 50px;
-	width: 500px;
+	width: 100px;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	background-color: var(--textColor);
 	transition: .1s ;
     visibility: inherit;
-
+	display: flex;
+	opacity: 1;
+	visibility: inherit;
+	background-color: transparent;
 	}
 	header .nav-btn {
 		display: none;
 	}
 	.links {
-		color: var(--mainColor);
+		color: var(--textColor);
 		font-size: 1rem;
+		transition: 0.2s;
+		display: flex;
+		align-items: center;
+		visibility: inherit;
+		border: none;
 	}
 	.links:hover{
 		color: #8b8989;

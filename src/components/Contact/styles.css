@@ -1,0 +1,100 @@
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100%;
+    padding: 60px 42px;
+    gap: 28px;
+}
+#contacto > h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+.square{
+    width: 260px;
+    height: 3px ;
+    background-color: #8b8989;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #a8a7a7; 
+    rotate: 45deg;
+    border: 2px solid #ffffff;
+}
+#contacto > span {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 300px;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.input-group label{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+}
+.input-group > input{
+    font-size: 16px;
+    font-weight: 400;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border: 1px solid black;
+    font-size: 12px;
+    padding: 4px;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+textarea{
+    font-size: 16px;
+    font-weight: 400;
+    width: 300px;
+    height: 200px;
+    border: none;
+    border: 1px solid black;
+    padding: 4px;
+}
+.btn_contact{
+    font-size: 16px;
+    font-weight: 500;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: black;
+    text-decoration: none;
+}
+.send_msg{
+    margin-bottom: auto;
+}

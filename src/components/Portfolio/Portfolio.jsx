@@ -1,10 +1,13 @@
-
+import AnimatedPages from "../AnimatedPages/AnimatedPages"
 
 const Portfolio = () => {
   return (
-    <section id='portfolio'>
+    <AnimatedPages>
+<section id='portfolio'>
       <h2>Portfolio</h2>
     </section>
+    </AnimatedPages>
+    
   )
 }
 

@@ -1,25 +1,30 @@
 import React from 'react'
 import Home from './components/Home/Home'
-import About from './components/About/About'
+import Shop from './components/Shop/Shop'
 import Services from './components/Services/Services'
 import Contact from './components/Contact/Contact'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Portfolio from './components/Portfolio/Portfolio'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 
 const App = () => {
 
+
   return (
-<>
-<Header />
-<Home />
-<About />
-<Services />
-<Portfolio />
-<Contact />
-<Footer />
-</>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/shop' element={<Shop />} />
+        <Route path='/services' element={<Services />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/portfolio' element={<Portfolio />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
+    
 
   )
 }
