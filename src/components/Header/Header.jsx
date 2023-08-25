@@ -12,16 +12,12 @@ function Header() {
 
 	const links = document.querySelectorAll(".links");
 
-
-	
-
-
 	// MOSTRAR Y OCULTAR NAVBAR
 	const showNavbar = () => {
 		navRef.current.classList.toggle(
 			"responsive_nav"
 		);
-		links.forEach(link => link.classList.toggle("active"));
+		links.forEach(link => link.classList.toggle("links"));
 		
 		setNavBtnActive(prevState => !prevState)
 	};
@@ -39,10 +35,10 @@ function Header() {
 			<Link to={"/"} onClick={closeNavbar}  className="logo"><img src={logo} alt="atoj studio" /></Link>
 			<nav ref={navRef}>
 			
-				<Link to={"/services"}   className="links" onClick={closeNavbar}>Servicios</Link>
-				<Link to={"/contact"}  className="links" onClick={closeNavbar}>Contacto</Link>
-				<Link to={"/portfolio"}  className="links" onClick={closeNavbar}>Portfolio</Link>
-                <Link to={"/shop"}   className="links last" onClick={closeNavbar}>Shop</Link>
+				<Link to={"/services"}  className="active" onClick={closeNavbar}>Servicios</Link>
+				<Link to={"/contact"} className="active" onClick={closeNavbar}>Contacto</Link>
+				<Link to={"/portfolio"} className="active" onClick={closeNavbar}>Portfolio</Link>
+                <Link to={"/shop"} className="active last" onClick={closeNavbar}>Shop</Link>
 			</nav>
 
 			<button className='nav-btn' onClick={showNavbar} >		

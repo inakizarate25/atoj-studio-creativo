@@ -55,7 +55,6 @@ const Portfolio = () => {
         <div className="port-title"> 
         <h2>Portafolio</h2>
         <div className="square"></div>
-
         </div>
 
         <section className="trabajos">

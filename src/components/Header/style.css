@@ -60,6 +60,13 @@ header .nav-btn {
 
 
 .links {
+	transition-delay: 1s;
+	opacity: 0;
+	visibility: hidden;
+}
+.active{
+	opacity: 1;
+	visibility: inherit;
 	color: var(--textColor);
 	font-size: 1.3rem;
 	text-decoration: none;
@@ -69,18 +76,12 @@ header .nav-btn {
 	z-index: -1;
 	transition: all .3s;
     border-bottom: 1px solid black;
-	visibility: hidden;
-	opacity: 0;
+	transition-delay: .1s;
 }
+
 .last{
 	border-bottom: none;
 }
-.active{
-visibility: inherit;
-opacity: 1;
-transition-delay: .1s;
-}
-
 @media screen and (min-width:1024px) {
 	header{
 		justify-content: space-around;
