@@ -33,3 +33,10 @@ p > a {
     padding: 2px 3px;
     border-radius: 3px;
 }
+.back-home{
+    margin-top: auto;
+}
+.error-msg{
+    color: red;
+    transition: all 0.5s;
+}
