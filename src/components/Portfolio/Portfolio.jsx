@@ -1,4 +1,5 @@
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
+import Footer from '../Footer/Footer'
 import './styles.css'
 
 const Portfolio = () => {
@@ -64,6 +65,7 @@ const Portfolio = () => {
             </article>
           ))}
         </section>
+        <Footer/>
       </section>
     </AnimatedPages>
     

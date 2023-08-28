@@ -23,11 +23,11 @@ const handleClick = () => {
       send ? '' :  <form>
       <div className="input-group">
         <label htmlFor="nombre">NOMBRE</label>
-        <input type="text" name="nombre" id="nombre" />
+        <input type="text" name="nombre" id="nombre" required/>
       </div>
       <div className="input-group">
         <label htmlFor="mail">MAIL</label>
-        <input type="mail" name="mail" id="mail" />
+        <input type="mail" name="mail" id="mail" required/>
       </div>
     </form>
     }

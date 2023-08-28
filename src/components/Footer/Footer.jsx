@@ -16,7 +16,7 @@ const Footer = () => {
         <a href=""><img src={li} alt="linkedin" /></a>
         <a href=""><img src={tik} alt="tiktok" /></a>
       </div>
-      <h2>&copy; 2022</h2>
+      <h2>&copy; 2023</h2>
     </footer>
   );
 }
