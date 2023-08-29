@@ -1,4 +1,4 @@
-import './styles.css'
+import './Contact.css'
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
