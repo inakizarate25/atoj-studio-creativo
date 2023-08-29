@@ -87,20 +87,20 @@ header .nav-btn {
 		justify-content: space-around;
 	}
 	nav{
-	position: relative;
-	top: 0;
-	height: 50px;
-	width: 100px;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--textColor);
-	transition: .1s ;
-    visibility: inherit;
-	display: flex;
-	opacity: 1;
-	visibility: inherit;
-	background-color: transparent;
+		position: relative;
+		top: 0;
+		height: 50px;
+		width: 100px;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--textColor);
+		transition: .1s ;
+		visibility: inherit;
+		display: flex;
+		opacity: 1;
+		visibility: inherit;
+		background-color: transparent;
 	}
 	header .nav-btn {
 		display: none;

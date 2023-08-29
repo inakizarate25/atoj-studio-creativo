@@ -1,4 +1,4 @@
-import './styles.css'
+import './Contact.css'
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
