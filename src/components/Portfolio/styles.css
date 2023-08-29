@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     padding: 74px 0 0 0 ;
+    font-family: var(--font-prinsipal);
 }
 .port-title{
     display: flex;
@@ -30,14 +31,15 @@
         align-items: flex-end;
         justify-content: flex-start;
     }
+ 
     .trabajos > article > h3{
         height: 40px;
         width: 100%;
-        background-color: #0d0d0d99;
+        background-color: var(--mainColor);
         color: white;
         font-size: 15px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        padding-left: 12px;
+        padding-left: 20px;
     }

@@ -16,7 +16,7 @@
 .square{
     width: 260px;
     height: 3px ;
-    background-color: #8b8989;
+    background-color: var(--mainColor);
     position: relative;
     display: flex;
     justify-content: center;
@@ -27,9 +27,9 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    background-color: #a8a7a7; 
+    background-color: var(--mainColor); 
     rotate: 45deg;
-    border: 2px solid #ffffff;
+    border: 1px solid var(--textColor);
 }
 #contacto > span {
     font-size: 14px;
@@ -65,8 +65,9 @@ form{
     height: 30px;
     border: none;
     border: 1px solid black;
-    font-size: 12px;
+    font-size: 16px;
     padding: 4px;
+    font-family: var(--font-secundaria);
 }
 input:focus,
 textarea:focus {
@@ -80,6 +81,7 @@ textarea{
     border: none;
     border: 1px solid black;
     padding: 4px;
+    font-family: var(--font-secundaria);
 }
 .btn_contact{
     font-size: 16px;
@@ -90,10 +92,15 @@ textarea{
     align-items: center;
     justify-content: center;
     border: none;
-    background: #D9D9D9;
+    background: var(--orange);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: black;
     text-decoration: none;
+    transition: all .3s;
+    cursor: pointer;
+}
+.btn_contact:active{
+    background-color: #F4B77C
 }
 .send_msg{
     margin-bottom: auto;

@@ -4,11 +4,13 @@ html{
     scroll-behavior: smooth;
 }
 :root {
-	--mainColor: #9D9D9D;
-	--secondaryColor: #D9D9D9;
+	--mainColor: #191E3B;
+	--secondaryColor: #F39234;
+    --orange:#E47C24;
 	--textColor: #FFFFFF;
     --font-prinsipal:'Raleway', sans-serif;
-    --font-secundaria: 'Montserrat', sans-serif;;
+    --font-secundaria: 'Montserrat', sans-serif;
+
 }
 *{
     margin: 0;
