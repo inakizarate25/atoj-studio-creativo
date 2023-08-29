@@ -1,4 +1,3 @@
-import React from 'react'
 import Home from './components/Home/Home'
 import Shop from './components/Shop/Shop'
 import Services from './components/Services/Services'

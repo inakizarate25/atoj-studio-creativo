@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { FaBars, FaTimes} from "react-icons/fa";
 import logo from '../../assets/aTOJ 1.png'
 import { Link } from "react-router-dom";
-import "./style.css";
+import "./Header.css";
 
 
 
