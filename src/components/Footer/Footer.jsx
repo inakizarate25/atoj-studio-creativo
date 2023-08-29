@@ -19,11 +19,11 @@ const Footer = () => {
         <a href=""><img src={li} alt="linkedin" /></a>
         <a href=""><img src={tik} alt="tiktok" /></a>
       </div>
-<<<<<<< HEAD
+
       <h2>&copy; 2023</h2>
 =======
       <h2>&copy; {date.getFullYear()}</h2>
->>>>>>> 85d79b3d92d98992731a8ed4a9a69e162a25f25a
+
     </footer>
   );
 }
