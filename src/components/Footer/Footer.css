@@ -4,12 +4,9 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     height: 200px;
-    width: 99.9vw;
+    width: 100%;
     color: var(--mainColor);
     background-color: #3A3A3A;
-    position: static;
-    bottom: 0;
-    left: 0;
 }
 .redes {
     display: flex;

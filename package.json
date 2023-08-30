@@ -10,11 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@emailjs/browser": "^3.11.0",
-=======
     "bootstrap": "^5.3.1",
->>>>>>> 85d79b3d92d98992731a8ed4a9a69e162a25f25a
     "framer-motion": "^10.15.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
