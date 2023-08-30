@@ -1,3 +1,14 @@
+#services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 60px 42px;
+  gap: 28px;
+}
+
 .linea {
     border-top: 1px solid black;
     height: 2px;
@@ -15,6 +26,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .squareS::after{
     content: '';
     position: absolute;
@@ -23,4 +35,59 @@
     background-color: #a8a7a7; 
     rotate: 45deg;
     border: 2px solid #ffffff;
+}
+
+.serviceSubtitle {
+  text-align: center;
+  width: 270px;
+}
+
+.service_Container {
+  max-width: 95%;
+  height: auto;
+  margin: 15px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #8b8989;
+  position: relative;
+}
+
+.service_Title {  
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.service_Subtitle {  
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.service_Content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.service_Button {
+  position: absolute;
+  bottom: -15px;
+  width: 150px;
+  padding: 5px 10px;
+  background-color: var(--secondaryColor);
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
 }

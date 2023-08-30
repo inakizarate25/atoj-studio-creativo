@@ -19,11 +19,11 @@ const Footer = () => {
         <a href=""><img src={li} alt="linkedin" /></a>
         <a href=""><img src={tik} alt="tiktok" /></a>
       </div>
-
+<<<<<<<<< Temporary merge branch 1
       <h2>&copy; 2023</h2>
-=======
+=========
       <h2>&copy; {date.getFullYear()}</h2>
-
+>>>>>>>>> Temporary merge branch 2
     </footer>
   );
 }

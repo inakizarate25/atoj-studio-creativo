@@ -1,7 +1,7 @@
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
 import './Home.css'
 import img from '../../assets/LOGO ATOJ.png';
-import Card from "./card";
+import Card from "./Card";
 import Text from "./Text";
 import Separator from "./Separator";
 import CarouselComponent from "./Carousel";

@@ -1,41 +1,20 @@
-import './Services.css'
-import AnimatedPages from "../AnimatedPages/AnimatedPages"
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import './Services.css';
+import Service from './Service';
+import AnimatedPages from "../AnimatedPages/AnimatedPages";
 
 const Services = () => {
-const [send, setSend] = useState(false)
 
-const handleClick = () => {
-  setSend(true)
-}
   return (
     <AnimatedPages>
- <section id="contacto">
-    <h1>Nuestros Servicios</h1>
-    <div><div className="squareS"></div></div>
-    <span>{ send ? "¡Gracias por ponerte en contacto con nosotros!" : "Descubre nuestra gama de servicios: Potenciando tu presencia con Diseño Gráfico y Web"}</span>
-
-    {
-      send ? <span className='send_msg'>Pronto alguien de nuestro Staff se pondra en contacto.</span> :  <form>
-      <div className="input-group">
-        <label htmlFor="nombre">NOMBRE</label>
-        <input type="text" name="nombre" id="nombre" />
-      </div>
-      <div className="input-group">
-        <label htmlFor="mail">MAIL</label>
-        <input type="mail" name="mail" id="mail" />
-      </div>
-      <div className="input-group">
-        <label htmlFor="mensaje">MENSAJE</label>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-      </div>
-    </form>
-    }
-    {
-      send ? <Link to='/' className='btn_contact'>VOLVER AL HOME</Link> : <button type="submit" className='btn_contact' onClick={handleClick}>ENVIAR</button>
-    }
-    </section>
+      <section id="services">
+        <h1>Nuestros Servicios</h1>
+        <div><div className="squareS"></div></div>
+        <span className='serviceSubtitle'>Descubre nuestra gama de Servicios: Potenciando tu presencia con Diseño Gráfico y Web</span>
+        <Service title={'DISEÑO DE IDENTIDAD VISUAL'} subtitle={'Subtítulo'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}/>
+        <Service title={'MARKETING DIGITAL'} subtitle={'Subtítulo'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}/>
+        <Service title={'DISEÑO GRÁFICO PARA REDES'} subtitle={'Subtítulo'} content={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}/>
+        
+      </section>
     </AnimatedPages>
    
   )
