@@ -118,7 +118,7 @@
 
 .serviceButton {
     position: absolute;
-    bottom: -15px; /* Coloca serviceButton en el borde inferior */
+    bottom: -15px; 
     width: 150px;
     padding: 5px 10px;
     background-color: var(--secondaryColor);
