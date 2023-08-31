@@ -26,7 +26,6 @@ const Home = () => {
           <ServiceLink title={'Servicio 1'} content={'Diseño de Logotipo'} url={'/'} />
           <ServiceLink title={'Servicio 2'} content={'Diseño de Contenido'} url={'/'} />
           <ServiceLink title={'Servicio 3'} content={'Gestión de redes'} url={'/'} />
-          <Slide/>
       
       </section>
     </AnimatedPages>
