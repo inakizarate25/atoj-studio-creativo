@@ -67,15 +67,20 @@ header .nav-btn {
 	opacity: 1;
 	visibility: inherit;
 	color: var(--textColor);
-	font-size: 1.3rem;
+	font-size: 34px;
 	text-decoration: none;
 	transition: all .4s;
-	font-weight:600;
-	padding: 20px 50%;
+	font-weight:400;
+    height: 90px;
+	width: 100%;
 	z-index: -1;
 	transition: all .3s;
     border-bottom: 2px solid black;
 	transition-delay: .1s;
+	font-family: var(--font-prinsipal);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .last{

@@ -4,8 +4,9 @@ import img from '../../assets/LOGO ATOJ.png';
 import Card from "./Card";
 import Text from "./Text";
 import Separator from "./Separator";
-import CarouselComponent from "./Carousel";
 import ServiceLink from "./serviceLink";
+import Slide from "../Slide/Slide";
+
 
 const Home = () => {
 
@@ -20,11 +21,13 @@ const Home = () => {
           <Card image={img} text={'Nombre'}/>
           <Text content={'Texto'} />
           <Separator />
-          <CarouselComponent />
+          <Slide/>
           <Separator />
           <ServiceLink title={'Servicio 1'} content={'Diseño de Logotipo'} url={'/'} />
           <ServiceLink title={'Servicio 2'} content={'Diseño de Contenido'} url={'/'} />
           <ServiceLink title={'Servicio 3'} content={'Gestión de redes'} url={'/'} />
+          <Slide/>
+      
       </section>
     </AnimatedPages>
    

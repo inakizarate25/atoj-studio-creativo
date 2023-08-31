@@ -1,63 +1,60 @@
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
 import Footer from '../Footer/Footer'
 import './styles.css'
+import img1 from '../../assets/image-1.webp'
+import img2 from '../../assets/image 2.png'
+import img3 from '../../assets/image 3.png'
+import img4 from '../../assets/image 4.png'
+import img5 from '../../assets/image 5.png'
+import img6 from '../../assets/Rectangle 46 (1).png'
+import img7 from '../../assets/Rectangle 46.png'
+
 
 const Portfolio = () => {
   const proyectos = [
     {
       id: 1,
-      title: "Proyecto 1",
+      title: "Clinica Dental Belladent",
       description: "Descripcion del proyecto 1",
-      img:'../../assets/fondo.svg',
+      img: img1 ,
     },
     {
       id: 2,
-      title: "Proyecto 2",
+      title: "Servicios Lira Soluciones",
       description: "Descripcion del proyecto 2",
-      img:'../../assets/fondo.svg',
+      img: img7,
     },
     {
       id: 3,
-      title: "Proyecto 3",
+      title: "Constructora Branch",
       description: "Descripcion del proyecto 3",
-      img:'../../assets/fondo.svg',
+      img: img2,
     },
     {
       id: 4,
-      title: "Proyecto 4",
+      title: "Consultora ambiental Esdras",
       description: "Descripcion del proyecto 4",
-      img:'../../assets/fondo.svg',
+      img: img3,
     },
     {
       id: 5,
-      title: "Proyecto 5",
+      title: "Repostería Artesanal Guelly",
       description: "Descripcion del proyecto 5",
-      img:'../../assets/fondo.svg',
+      img: img4,
     },
     {
       id: 6,
-      title: "Proyecto 6",
+      title: "Crafted - Impresión 3D",
       description: "Descripcion del proyecto 6",
-      img:'../../assets/fondo.svg',
+      img: img6,
     },
     {
       id: 7,
-      title: "Proyecto 7",
+      title: "Catalina Collection",
       description: "Descripcion del proyecto 7",
-      img:'../../assets/fondo.svg',
+      img: img5,
     },
-    {
-      id: 8,
-      title: "Proyecto 8",
-      description: "Descripcion del proyecto 8",
-      img:'../../assets/fondo.svg',
-    },
-    {
-      id: 9,
-      title: "Proyecto 9",
-      description: "Descripcion del proyecto 9",
-      img:'../../assets/fondo.svg',
-    },
+  
   ]
   return (
     <AnimatedPages>
@@ -70,6 +67,7 @@ const Portfolio = () => {
         <section className="trabajos">
           {proyectos.map(proyecto => (
             <article key={proyecto.id}>
+              <img src={proyecto.img} alt={proyecto.title} />
               <h3>{proyecto.title}</h3>
             </article>
           ))}
