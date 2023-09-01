@@ -1,16 +1,15 @@
-import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import './styles.css';
 
 // import required modules
-import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
 
 import img1 from '../../assets/1.png'
 import img2 from '../../assets/2.png'
@@ -32,10 +31,12 @@ const Slide = () => {
           stretch: 0,
           depth: 500,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
+        loop={true}
         pagination={false}
-        modules={[EffectCoverflow, Pagination, Autoplay]}
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
         autoplay={{
             delay: 3000,
             disableOnInteraction: false,
