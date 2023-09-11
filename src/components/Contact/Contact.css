@@ -22,15 +22,7 @@
     justify-content: center;
     align-items: center;
 }
-.square::after{
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    background-color: var(--mainColor); 
-    rotate: 45deg;
-    border: 1px solid var(--textColor);
-}
+
 #contacto > span {
     font-size: 14px;
     font-weight: 400;

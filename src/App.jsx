@@ -25,6 +25,7 @@ const App = () => {
         <Route path="/portfolio" element={<Portfolio/>} />
         <Route path="/compra" element={<Compra/>} />
         <Route path="/descarga" element={<Descarga/>} />
+        <Route path='/descargable/:id' element={<Descarga/>} />
         <Route path="*" element={<h2>404 Not found</h2>} />
       </Routes>
     </BrowserRouter>

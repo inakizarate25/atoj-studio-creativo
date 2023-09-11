@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast';
+import img1 from '../../assets/Vector 3.svg'
 
 const notify = () => toast.success('Mensaje Enviado');
 
@@ -30,7 +31,7 @@ const sendEmail = (e) => {
     <AnimatedPages>
  <section id="contacto">
     <h2>Contacto</h2>
-    <div className="square"></div>
+    <div className="square"><img src={img1} alt="" /></div>
     <span>{ send ? "¡Gracias por ponerte en contacto con nosotros!" : "¿Tenés algo para decir? Dejanos tu mensaje o consulta"}</span>
 
     {
