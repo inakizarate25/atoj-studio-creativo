@@ -1,9 +1,14 @@
-import './styles.css'
-import AnimatedPages from "../AnimatedPages/AnimatedPages"
-import { useState } from 'react'
-import { Link } from 'react-router-dom'
 
-const Descarga = () => {
+// ITEMdetail
+
+
+import './styles.css'
+import  { getDescById } from '../../data'
+import AnimatedPages from "../AnimatedPages/AnimatedPages"
+import { useState, useEffect } from 'react'
+import { Link, useParams } from 'react-router-dom'
+
+const Descarga = ({products}) => {
 
 
   const [send, setSend] = useState(false);
@@ -33,17 +38,23 @@ const Descarga = () => {
 
     setErrores({});
     setSend(true);
-  };
+  }
 
+  const { id } = useParams()
+  const product = products.find((p) => p.id === parseInt(id));
+  if (!product) {
+    return <div>Producto no encontrado</div>;
+  }
 
   return (
     <AnimatedPages>
  <section id="descarga-sec">
     <h2>{send ? '¡Felicidades!' : '¡Ya casi es tuyo!'}</h2>
     <div className="square"></div>
-    <span>{ send ? <div className='msg-desc'>
+    <span>{ send ? <div key={product.id} className='msg-desc'>
         <span>¡Que disfrutes tu regalo!</span>
-        <p>A través de este <a>LINK</a> podrás obtener tu descargable gratuito</p>
+        <p>A través de este <a href={product.link}>LINK</a> podrás obtener tu descargable gratuito</p>
+
         <Link className='btn_contact back-home'  to="/">VOLVER AL HOME</Link>
     </div> : ""}</span>
 
