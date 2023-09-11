@@ -2,7 +2,6 @@ import './styles.css'
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import img1 from '../../assets/Captura de Pantalla 2023-09-04 a la(s) 20.58 2.png'
 
 const Descarga = () => {
 
@@ -41,7 +40,7 @@ const Descarga = () => {
     <AnimatedPages>
  <section id="descarga-sec">
     <h2>{send ? '¡Felicidades!' : '¡Ya casi es tuyo!'}</h2>
-    <div className="square"><img src={img1} alt="" /></div>
+    <div className="square"></div>
     <span>{ send ? <div className='msg-desc'>
         <span>¡Que disfrutes tu regalo!</span>
         <p>A través de este <a>LINK</a> podrás obtener tu descargable gratuito</p>
