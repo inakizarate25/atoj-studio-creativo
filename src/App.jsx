@@ -28,6 +28,7 @@ const App = () => {
         <Route path="/descargable/:id" element={<Descarga products={products}/>} />
         <Route path="*" element={<h2>404 Not found</h2>} />
       </Routes>
+      <Footer />
     </BrowserRouter>
     
 

@@ -3,7 +3,7 @@ footer {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px;
+    height: 100px;
     width: 100%;
     color: var(--mainColor);
     background-color: var(--mainColor);
@@ -13,7 +13,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100px;
+    height: 50px;
     gap: 19px;
     background-color: var(--textColor);
 }

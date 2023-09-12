@@ -13,7 +13,7 @@ const Compra = () => {
           Whats App del Staff.
         </span>
         </div>
-        <a href="#" className="btn-compra">CONTINUAR LA COMPRA</a>
+        <a href="https://wa.me/59170703903" className="btn-compra">CONTINUAR LA COMPRA</a>
       </section>
     </AnimatedPages>
   );
