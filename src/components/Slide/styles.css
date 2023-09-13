@@ -1,5 +1,5 @@
 .slide-cont{
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,7 @@
 .swiper {
     width: 80%;
     overflow: hidden;
+    max-width: 1024px;
   }
   
   .swiper-slide {
