@@ -1,8 +1,9 @@
+import Wave from '../Wave/Wave';
 import './objetives.css'
 const Objetives = () => {
     return (
         <div className="contenedorInfo">
-            <p>imagenes</p>
+           <Wave/>
         </div>
     );
 }

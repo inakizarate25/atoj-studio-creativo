@@ -19,6 +19,7 @@ import B5 from '../../assets/b5.png'
 import B6 from '../../assets/b6.png'
 
 
+
 const Home = () => {
 
 
@@ -42,6 +43,7 @@ const Home = () => {
         </div>
           <Slide2 />
           <Slide/>
+    
           <Objetives />
           <ServiceLink icon={lapiz} content={'Diseño de Logotipo'} url={'/services'} />
           <ServiceLink icon={idea} content={'Diseño de Contenido'} url={'/services'} />
