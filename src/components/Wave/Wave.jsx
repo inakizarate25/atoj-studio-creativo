@@ -3,15 +3,15 @@ import './styles.css'
 const Wave = () => {
   return (
     <>
-     <div class="circle">
-    <div class="wave"></div>
-  </div>
-  <div class="circle">
-    <div class="wave"></div>
-  </div>
-  <div class="circle circle2">
-    <div class="wave wave2"></div>
-  </div>
+      <div className="circle">
+        <div className="wave"></div>
+      </div>
+      <div className="circle">
+        <div className="wave"></div>
+      </div>
+      <div className="circle circle2">
+        <div className="wave wave2"></div>
+      </div>
     </>
   )
 }
