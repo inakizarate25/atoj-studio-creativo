@@ -1,5 +1,4 @@
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
-import Footer from '../Footer/Footer'
 import './styles.css'
 import img1 from '../../assets/image-1.webp'
 import img2 from '../../assets/image 2.png'
@@ -59,12 +58,9 @@ const Portfolio = () => {
   ]
   return (
     <AnimatedPages>
-      <section id='portfolio'>
-        <div className="port-title"> 
+      <section id='portfolio'>        
         <h2>Portafolio</h2>
         <Separator />
-        </div>
-
         <section className="trabajos">
           {proyectos.map(proyecto => (
             <article key={proyecto.id}>
@@ -73,7 +69,6 @@ const Portfolio = () => {
             </article>
           ))}
         </section>
-        <Footer/>
       </section>
     </AnimatedPages>
     

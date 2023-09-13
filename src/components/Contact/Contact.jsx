@@ -28,7 +28,7 @@ const sendEmail = (e) => {
 
   return (
     <AnimatedPages>
- <section id="contacto">
+  <section id="contacto">
     <h2>Contacto</h2>
     <Separator />
     <span>{ send ? "¡Gracias por ponerte en contacto con nosotros!" : "¿Tenés algo para decir? Dejanos tu mensaje o consulta"}</span>

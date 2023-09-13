@@ -5,17 +5,23 @@
   justify-content: center;
   height: 100%;
   width: 100%;
-  padding: 60px 42px;
+  padding: 60px 42px 10px;
   gap: 28px;
+}
+
+#services > h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .serviceSubtitle {
   text-align: center;
-  width: 270px;
+  width: 280px;
 }
 
 .service_Container {
-  max-width: 95%;
+  width: 241px;
   height: auto;
   margin: 15px 0 50px;
   display: flex;
@@ -27,7 +33,6 @@
 }
 
 .service_Title {  
-
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -35,31 +40,41 @@
   margin-bottom: 0;
 }
 
-.service_Subtitle {  
-  width: 100%;
-  font-size: 16px;
-  text-align: center;
-  margin: 10px 0;
-}
-
 .service_Content {
-  padding: 20px;
+  width: 208px;
+  height: 187px;
+  margin: 25px 0 40px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: start;
+  text-align: start;
   flex-grow: 1;
+  font-family: var(--font-secundaria);
+}
+
+.listItem {
+  font-family: var(--font-secundaria);
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 20px;
 }
 
 .service_Button {
   position: absolute;
-  bottom: -15px;
-  width: 150px;
+  bottom: -20px;
+  width: 146px;
+  height: 40px;
   padding: 5px 10px;
-  background-color: var(--secondaryColor);
+  background-color: var(--terciaryColor);
   color: black;
   border: none;
   cursor: pointer;
   font-size: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+  font-family: var(--font-secundaria);
 }

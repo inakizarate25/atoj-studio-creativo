@@ -13,7 +13,8 @@ header {
 	background-color: var(--mainColor);
 }
 .logo > img {
-	width: 100px;
+	width: 120px;
+	height: 69px;
 	z-index: 10000;
 }
 nav {

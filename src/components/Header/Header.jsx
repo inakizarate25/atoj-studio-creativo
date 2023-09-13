@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { FaBars, FaTimes} from "react-icons/fa";
-import logo from '../../assets/aTOJ 1.png'
+import logo from '../../assets/logo2.png'
 import { Link } from "react-router-dom";
 import "./Header.css";
 
@@ -32,8 +32,8 @@ function Header() {
 
 	return (
 		<header>
-			<Link to={"/"} onClick={closeNavbar}  className="logo"><img src={logo} alt="atoj studio" /></Link>
-			<nav ref={navRef}>
+			<Link to={"/"} onClick={closeNavbar} className="logo"><img src={logo} alt="atoj studio" /></Link>
+				<nav ref={navRef}>
 			<Link to={"/"}  className="active" onClick={closeNavbar}>Home</Link>
 				<Link to={"/services"}  className="active" onClick={closeNavbar}>Servicios</Link>
 				<Link to={"/contact"} className="active" onClick={closeNavbar}>Contacto</Link>

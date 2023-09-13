@@ -5,7 +5,7 @@ const ServiceLink = ({content, url, icon}) => {
     return (
         <div className="serviceContainer">
             <h2 className="serviceContent">{content}</h2>
-            <img className="icon" src={icon} alt="icon" />
+            <img className="icons" src={icon} alt="icon" />
             <Link to={url} className="serviceButton">Más detalles</Link>
         </div>
     );

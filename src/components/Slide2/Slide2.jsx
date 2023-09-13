@@ -8,7 +8,7 @@ import 'swiper/css/navigation';
 import './slide2.css';
 
 // import required modules
-import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import img1 from '../../assets/cd3.jpg'
 import img2 from '../../assets/cm1.jpg'
@@ -28,18 +28,14 @@ const Slide2 = () => {
         coverflowEffect={{
           rotate: 10,
           stretch: 0,
-          depth: 500,
+          depth: 10,
           modifier: 1,
           slideShadows: false,
         }}
         loop={true}
         pagination={false}
         navigation={true}
-        modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        modules={[EffectCoverflow, Pagination, Navigation]}
         className="mySwiper swiper2"
       >
         <SwiperSlide className='integrante'>

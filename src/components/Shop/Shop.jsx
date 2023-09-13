@@ -29,10 +29,9 @@ const Shop = () => {
   return (
     <AnimatedPages>
    <section id='shop'>
-   <div className="shop-title"> 
         <h2>Shop</h2>
         <Separator />
-        </div>
+       
 
         <section className="descargables_list">
         {descargables.map((descargable) => (

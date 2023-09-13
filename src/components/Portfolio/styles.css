@@ -1,56 +1,59 @@
-#portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 74px 0 0 0 ;
-    font-family: var(--font-prinsipal);
+#portfolio {    
+  padding: 74px 0 50px 0 ;
+  font-family: var(--font-prinsipal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.port-title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 40px;
+
+#portfolio > h2 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
 }
+
 .trabajos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  width: 100%;
 }
- .trabajos > article{
-        width: 100%;
-        max-width: 500px;
-        min-height: 250px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    article > img {
-      height:auto;
-      position: relative;
-      top: 0;
-      left: 0;
-      padding: 8px 0;
-    }
- 
-    .trabajos > article > h3{
-        height: 40px;
-        min-height: 40px;
-        width: 100%;
-        background-color: var(--mainColor);
-        color: white;
-        font-size: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding-left: 20px;
-        position: relative;
-        bottom: 0;
-        left: 0;
-    }
+
+.trabajos > article{
+  width: 100%;
+  max-width: 500px;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+article > img {
+  height:auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 8px 0;
+}
+
+.trabajos > article > h3{
+    height: 40px;
+    min-height: 40px;
+    width: 100%;
+    background-color: var(--mainColor);
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
