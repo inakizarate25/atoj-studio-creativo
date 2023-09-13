@@ -95,16 +95,14 @@ header .nav-btn {
 		position: relative;
 		top: 0;
 		height: 50px;
-		width: 100px;
+		width: 50%;
 		flex-direction: row;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-evenly;
 		background-color: var(--textColor);
-		transition: .1s ;
-		visibility: inherit;
+		visibility: visible;
 		display: flex;
 		opacity: 1;
-		visibility: inherit;
 		background-color: transparent;
 	}
 	header .nav-btn {
@@ -121,5 +119,43 @@ header .nav-btn {
 	}
 	.links:hover{
 		color: #8b8989;
+	}
+
+	.active{
+		opacity: 1;
+		visibility: visible;
+		color: var(--textColor);
+		font-size: 20px;
+		text-decoration: none;
+		font-weight:400;
+		height: auto;
+		width: auto;
+		transition: all .5s;
+		font-family: var(--font-prinsipal);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
+	}
+
+	.active:hover {
+		color: var(--secondaryColor);
+	}
+
+	.selected {
+		opacity: 1;
+		visibility: visible;
+		color: var(--secondaryColor);
+		font-size: 20px;
+		text-decoration: none;
+		font-weight:400;
+		height: auto;
+		width: auto;
+		transition: all .5s;
+		font-family: var(--font-prinsipal);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: none;
 	}
 }

@@ -11,6 +11,13 @@ import idea from '../../assets/idea.png';
 import like from '../../assets/like.png';
 import Slide3 from "../Slide3/Slide3";
 
+import B1 from '../../assets/b1.png'
+import B2 from '../../assets/b2.png'
+import B3 from '../../assets/b3.png'
+import B4 from '../../assets/b4.png'
+import B5 from '../../assets/b5.png'
+import B6 from '../../assets/b6.png'
+
 
 const Home = () => {
 
@@ -39,7 +46,24 @@ const Home = () => {
           <ServiceLink icon={lapiz} content={'Diseño de Logotipo'} url={'/services'} />
           <ServiceLink icon={idea} content={'Diseño de Contenido'} url={'/services'} />
           <ServiceLink icon={like} content={'Gestión de redes'} url={'/services'} />
-      
+          <div className="cartel">
+            <span>
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
+            </span>
+          </div>
       </section>
     </AnimatedPages>
    

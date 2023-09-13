@@ -9,6 +9,8 @@ import "./Header.css";
 function Header() {
 	const navRef = useRef();
 	const [navBtnActive, setNavBtnActive] = useState(false);
+	const [selectedLink, setSelectedLink] = useState('home');
+
 
 	const links = document.querySelectorAll(".links");
 
@@ -21,24 +23,25 @@ function Header() {
 		
 		setNavBtnActive(prevState => !prevState)
 	};
-	const closeNavbar = () => {
+	function closeNavbar (id) {
 		navRef.current.classList.remove(
 			"responsive_nav"
 			);
 		links.forEach(link => link.classList.remove("active"));
 
 			setNavBtnActive(false);
+			setSelectedLink(id)
 	}
 
 	return (
 		<header>
 			<Link to={"/"} onClick={closeNavbar} className="logo"><img src={logo} alt="atoj studio" /></Link>
-				<nav ref={navRef}>
-			<Link to={"/"}  className="active" onClick={closeNavbar}>Home</Link>
-				<Link to={"/services"}  className="active" onClick={closeNavbar}>Servicios</Link>
-				<Link to={"/contact"} className="active" onClick={closeNavbar}>Contacto</Link>
-				<Link to={"/portfolio"} className="active" onClick={closeNavbar}>Portfolio</Link>
-                <Link to={"/shop"} className="active last" onClick={closeNavbar}>Shop</Link>
+			<nav ref={navRef}>
+				<Link to={"/"} className={selectedLink === 'home' ? 'selected' : 'active'} onClick={() => closeNavbar('home')}>Home</Link>
+				<Link to={"/services"} className={selectedLink === 'services' ? 'selected' : 'active'} onClick={() => closeNavbar('services')}>Servicios</Link>
+				<Link to={"/contact"} className={selectedLink === 'contact' ? 'selected' : 'active'} onClick={() => closeNavbar('contact')}>Contacto</Link>
+				<Link to={"/portfolio"} className={selectedLink === 'portfolio' ? 'selected' : 'active'} onClick={() => closeNavbar('portfolio')}>Portfolio</Link>
+                <Link to={"/shop"} className={selectedLink === 'shop' ? 'selected' : 'active last'} onClick={() => closeNavbar('shop')}>Shop</Link>
 			</nav>
 
 			<button className='nav-btn' onClick={showNavbar} >		
