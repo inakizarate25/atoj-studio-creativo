@@ -1,5 +1,5 @@
 .palabras {
-    max-width: 100vw;
+    max-width: 90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,6 @@
 .item {
     background-position: center;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: auto;
 }
