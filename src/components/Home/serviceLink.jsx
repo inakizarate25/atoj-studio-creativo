@@ -1,9 +1,12 @@
-const ServiceLink = ({title, content, url}) => {
+import { Link } from "react-router-dom";
+
+
+const ServiceLink = ({content, url, icon}) => {
     return (
         <div className="serviceContainer">
-            <h3 className="serviceTitle">{title}</h3>
             <h2 className="serviceContent">{content}</h2>
-            <button className="serviceButton">Ver más</button>
+            <img className="icon" src={icon} alt="icon" />
+            <Link to={url} className="serviceButton">Más detalles</Link>
         </div>
     );
 }

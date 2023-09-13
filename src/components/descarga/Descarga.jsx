@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link, useParams } from "react-router-dom";
+import Separator from "../Separator/Separator";
 
 const notify = () => toast.success('Email agregado correctamente');
 const Descarga = ({ products }) => {
@@ -65,7 +66,7 @@ const Descarga = ({ products }) => {
     <AnimatedPages>
       <section id="descarga-sec">
         <h2>{send ? "¡Felicidades!" : "¡Ya casi es tuyo!"}</h2>
-        <div className="square"></div>
+        <Separator />
         <span>
           {send ? (
             <div key={product.id} className="msg-desc">

@@ -11,100 +11,84 @@
     display: flex;
     width: 100%;
     height: 300px;
-    margin: 30px 0 50px;
-    background-color: var(--secondaryColor);
+    background-image: url(../../assets/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: var(--textColor);
+    letter-spacing: 2px;
+    font-size: 45px;
 }
 
-.homeCard {
-    width: 200px;
-    height: 230px;
+.misionValor {
+    font-size: 30px;
+    margin-bottom: 15px;
+    margin-top: 50px;
+    color: var(--mainColor);
+}
+
+.marco {
+    border: 1px solid black;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    padding: 45px 5px;    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--secondaryColor);
-    margin-bottom: 20px ;
-}
-
-.cardImg {
-    margin: 10px;
-    background-color: var(--mainColor);
-    height: 70%;
-    object-fit: contain;
-}
-
-.card-body {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;    
+    position: relative;
+    color: var(--mainColor);
 }
 
-.texto-contenedor {
-    width: 250px;
-    height: 280px;
-    margin-bottom: 50px;
+.contenido {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--mainColor);
+    flex-grow: 1;
+    font-size: 18px;
+    color: var(--mainColor);
 }
 
-.texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 220px;
-    height: 250px;
-    border: dashed 1px black;
-}
-
-.separator{
-    margin: 30px 0;
-    width: 100%;
-    height: 2px ;
-    background-color: #8b8989;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.separator::after{
-    content: '';
+.bordearriba {
     position: absolute;
-    width: 30%;
-    height: 5px;
-    background-color: white; 
+    top: -13px;
+    width: 130px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainColor);
 }
 
-.carousel {
-    width: 70%;
-    margin: 30px 0;    
+.bordeabajo {
+    position: absolute;
+    bottom: -8px; 
+    width: 130px;
+    background-color: white;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainColor);
 }
 
 .serviceContainer {
-    width: 75%;
-    height: 300px;
-    margin: 50px auto;
+    width: 282px;
+    height: 256px;
+    margin: 50px ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid #8b8989;
+    background-color: var(--mainColor);
+    color: var(--textColor);
     position: relative;
-}
-
-.serviceTitle {
-    position: absolute;
-    top: -15px;
-    width: 150px;
-    background-color: var(--secondaryColor);
-    padding: 5px 10px;
-    font-size: 16px;
-    text-align: center;
 }
 
 .serviceContent {
@@ -112,18 +96,34 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-grow: 1;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .serviceButton {
     position: absolute;
-    bottom: -15px; 
-    width: 150px;
+    bottom: -25px; 
+    width: 170px;
+    height: 55px;
     padding: 5px 10px;
-    background-color: var(--secondaryColor);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--terciaryColor);
     color: black;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 75px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

@@ -4,6 +4,7 @@ import { Link, useParams } from "react-router-dom"
 import img1 from '../../assets/Vector 3.svg'
 import descargables, { getDescById } from "../../data"
 import { useEffect, useState } from "react"
+import Separator from "../Separator/Separator"
 
 
 // item
@@ -30,7 +31,7 @@ const Shop = () => {
    <section id='shop'>
    <div className="shop-title"> 
         <h2>Shop</h2>
-        <div className="square"><img src={img1} alt={descargables.title} /></div>
+        <Separator />
         </div>
 
         <section className="descargables_list">

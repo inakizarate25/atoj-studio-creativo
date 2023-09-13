@@ -4,21 +4,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: var(--mainColor);
+  margin: 50px 0;
 }
 .slide-cont > h2 {
   font-size: 30px;
   font-weight: 400;
   text-align: center;
-  color: var(--textColor);
-  padding: 18px 0 0;
+  color: var(--mainColor);
+  padding: 0;
+  margin-bottom: 50px;
 }
 .swiper {
-    width: 360px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    width: 80%;
     overflow: hidden;
-    background-color: var(--mainColor);
   }
   
   .swiper-slide {
@@ -31,3 +29,21 @@
   .swiper-slide img {
     width: 100%;
   }
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: var(--terciaryColor);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: var(--mainColor);
+  font-size: 18px;
+  font-weight: bolder;
+}

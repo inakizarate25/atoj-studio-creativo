@@ -8,6 +8,7 @@ import img4 from '../../assets/image 4.png'
 import img5 from '../../assets/image 5.png'
 import img6 from '../../assets/Rectangle 46 (1).png'
 import img7 from '../../assets/Rectangle 46.png'
+import Separator from "../Separator/Separator"
 
 
 const Portfolio = () => {
@@ -61,7 +62,7 @@ const Portfolio = () => {
       <section id='portfolio'>
         <div className="port-title"> 
         <h2>Portafolio</h2>
-        <div className="square"></div>
+        <Separator />
         </div>
 
         <section className="trabajos">

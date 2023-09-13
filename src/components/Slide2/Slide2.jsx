@@ -4,28 +4,27 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './styles.css';
+import './slide2.css';
 
 // import required modules
 import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
 
-import img1 from '../../assets/1.png'
-import img2 from '../../assets/2.png'
-import img3 from '../../assets/3.png'
-import img4 from '../../assets/4.png'
+import img1 from '../../assets/cd3.jpg'
+import img2 from '../../assets/cm1.jpg'
+import img3 from '../../assets/gd3.jpg'
 
-const Slide = () => {
+
+const Slide2 = () => {
+
   return (
     <>
-    <div className='slide-cont'>
-    <h2>Portafolio</h2>
-      <Swiper
+    <div className='slide-cont integrantes'>
+    <Swiper
         effect={'coverflow'}
         grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
+        centeredSlides={false}
+        spaceBetween={0}
         coverflowEffect={{
           rotate: 10,
           stretch: 0,
@@ -38,27 +37,23 @@ const Slide = () => {
         navigation={true}
         modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
         autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-        className="mySwiper"
+          delay: 3000,
+          disableOnInteraction: false,
+        }}
+        className="mySwiper swiper2"
       >
-        <SwiperSlide>
+        <SwiperSlide className='integrante'>
           <img src={img1} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='integrante'>
           <img src={img2} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='integrante'>
           <img src={img3} />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={img4} />
-        </SwiperSlide>
       </Swiper>
-    </div>
-   
+    </div>   
     </>
   );
 }
-export default Slide
+export default Slide2

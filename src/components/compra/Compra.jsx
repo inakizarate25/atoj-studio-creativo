@@ -1,4 +1,5 @@
 import AnimatedPages from "../AnimatedPages/AnimatedPages";
+import Separator from "../Separator/Separator";
 import './styles.css'
 
 const Compra = () => {
@@ -7,7 +8,7 @@ const Compra = () => {
       <section id="compra">
         <div className="shop-title compra-title">
           <h2>¡Ya casi es tuyo!</h2>
-          <div className="square"></div>
+          <Separator />
           <span>
           Para continuar la compra, accede al siguiente botón, te redirigira al
           Whats App del Staff.

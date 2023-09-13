@@ -1,0 +1,72 @@
+.integrantes{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../assets/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px 0 0 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .swiper2 {
+      width: 300px;
+      overflow: visible;
+      padding: 0;
+    }
+    
+    .integrante {
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+    }
+    
+    .integrante img {
+      width: 100%;
+    }
+
+.swiper2 .swiper-button-prev {
+  z-index: 9999;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url(../../assets/prev.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 53px;
+  height: 61px;  
+  position:fixed;
+  visibility: visible;
+  margin-left: -45px;
+}
+
+.swiper2 .swiper-button-prev::after {
+  color: var(--terciaryColor);
+}
+
+.swiper2 .swiper-button-next {
+  z-index: 9999;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url(../../assets/next.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 53px;
+  height: 61px;  
+  position:fixed;
+  visibility: visible;
+  margin-right: -40px;
+}
+
+.swiper2 .swiper-button-next::after {
+  color: var(--terciaryColor);
+}
+
+.swiper2 .swiper-slide-prev,
+.swiper2 .swiper-slide-next {
+  visibility: hidden;
+}
