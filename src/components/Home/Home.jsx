@@ -12,6 +12,7 @@ import like from '../../assets/like.png';
 import Slide3 from "../Slide3/Slide3";
 
 
+
 const Home = () => {
 
 
@@ -35,6 +36,7 @@ const Home = () => {
         </div>
           <Slide2 />
           <Slide/>
+    
           <Objetives />
           <ServiceLink icon={lapiz} content={'Diseño de Logotipo'} url={'/services'} />
           <ServiceLink icon={idea} content={'Diseño de Contenido'} url={'/services'} />
