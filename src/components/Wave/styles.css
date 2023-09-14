@@ -45,20 +45,20 @@
     background: linear-gradient(#F1D0AA, #9C9AF0);
     border-radius: 40%;
     animation: animate2 7s linear;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -85%);
   }
   .wave2::after{
     background-color: #fff;
     border-radius: 45%;
     top: -5%;
     animation: animate2 7s linear;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -85%);
   }
   @keyframes animate2{
     0%{
       transform: translate(-50%, -50%) rotate(0deg);
     }
     100%{
-      transform: translate(-50%, -75%) rotate(360deg);
+      transform: translate(-50%, -85%) rotate(360deg);
     }
   }

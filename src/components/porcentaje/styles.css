@@ -1,0 +1,16 @@
+.porcentaje {
+    width: 290px;
+    height: 90px;
+    background-color: var(--mainColor);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--textColor);
+    flex-direction: column;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.porcentaje > h4 {
+    font-weight: 500;
+}

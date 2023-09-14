@@ -2,41 +2,30 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+
 import './slide3.css';
 
 // import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Autoplay } from "swiper/modules";
 
 const Slide3 = () => {
 
   return (
     <>
-    <div className='slide-cont palabras'>
-    <Swiper 
-        pagination={false}
-        loop={false}
-        navigation={false}
-        modules={[ Pagination, Autoplay]}
+    <div className='slide-cont1'>
+    <Swiper
+        direction={"vertical"}
         autoplay={{
-          delay: 1000,
-          disableOnInteraction: false,
+          delay: 1500,
+          disableOnInteraction: false
         }}
-        className="swiper3"
+        modules={[Autoplay]}
+        className="mySwiper1"
       >
-        <SwiperSlide className='item'>
-        <p>Compromiso</p>
-        </SwiperSlide>
-        <SwiperSlide className='item'>
-        <p>Eficacia</p>
-        </SwiperSlide>
-        <SwiperSlide className='item'>
-        <p>Puntualidad</p>
-        </SwiperSlide>
-        <SwiperSlide className='item'>
-        <p>Creatividad</p>
-        </SwiperSlide>
+        <SwiperSlide className='swiper-slide1'>Compromiso</SwiperSlide>
+        <SwiperSlide className='swiper-slide1'>Eficacia</SwiperSlide>
+        <SwiperSlide className='swiper-slide1'>Puntualidad</SwiperSlide>
+        <SwiperSlide className='swiper-slide1'>Creatividad</SwiperSlide>
       </Swiper>
     </div>   
     </>
