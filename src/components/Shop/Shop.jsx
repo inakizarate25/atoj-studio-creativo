@@ -1,25 +1,9 @@
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
 import './styles.css'
-import { Link, useParams } from "react-router-dom"
-import img1 from '../../assets/Vector 3.svg'
+import { Link} from "react-router-dom"
 import descargables, { getDescById } from "../../data"
-import { useEffect, useState } from "react"
 import Separator from "../Separator/Separator"
 
-
-// item
-// const Item = ({id, title, img, gratis}) => {
-//   return (
-//     <article className="descargable" key={id}>
-//         <img src={img} alt={title}/>
-//         <h3>{title}</h3>
-//         {
-//           gratis ? <Link to={`/descarga/${id}`} className="descargar">Descargar</Link> : <Link to='/compra' className="descargar">Comprar</Link>
-//         }
-//     </article>
-//   )
- 
-// }
 
 
 // itemdetail

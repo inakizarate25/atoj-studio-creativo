@@ -36,7 +36,7 @@ form{
     justify-content: center;
     gap: 20px;
     width: 100%;
-    max-width: 300px;
+    
 }
 .input-group{
     display: flex;
@@ -93,4 +93,48 @@ textarea{
 }
 .send_msg{
     margin-bottom: auto;
+}
+@media screen and (min-width: 1024px) {
+    form{
+        width: 700px;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+    .input-group label{
+        font-size: 24px;
+        font-weight: 400;
+        color: black;
+    }
+    .input-group > input{
+        width: 500px;
+        height: 40px;
+        font-size: 20px;
+    }
+    textarea{
+        font-size: 20px;
+        font-weight: 400;
+        width: 500px;
+        height: 200px;
+    }
+    .btn_contact{
+        font-size: 24px;
+        font-weight: 500;
+        width: 500px;
+        height: 50px;
+    }
+    #contacto{
+        margin-top: 200px;
+    }
+    
+#contacto > span {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
 }

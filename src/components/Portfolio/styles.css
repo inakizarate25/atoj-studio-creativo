@@ -35,7 +35,7 @@
 }
 
 article > img {
-  height:auto;
+  height: 200px;
   position: relative;
   top: 0;
   left: 0;
@@ -56,4 +56,11 @@ article > img {
     position: relative;
     bottom: 0;
     left: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  #portfolio > h2 {
+    font-size: 50px;
+    font-weight: 600;
+  }
 }

@@ -6,7 +6,7 @@ const Compra = () => {
   return (
     <AnimatedPages>
       <section id="compra">
-        <div className="shop-title compra-title">
+        <div className=" compra-title">
           <h2>¡Ya casi es tuyo!</h2>
           <Separator />
           <span>

@@ -56,3 +56,63 @@
     color: var(--textColor);
     text-decoration: none;
 }
+
+
+@media screen and (min-width: 1024px) {
+    #shop > h2 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .descargable {
+        width: 300px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 18px;
+        background-color: #F4B77C;
+        position: relative;
+        gap: 10px;
+    }
+    .descargable > img {
+        width: 230px;
+        height: 230px;
+    
+    
+    }
+    .descargable > h3 {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        padding-bottom: 10px;
+    
+    
+    }
+
+    
+    .descargables_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+        max-width: 1200px;
+    }
+    
+    .descargar {
+        position: absolute;
+        bottom: -28px;
+        background-color: var(--mainColor);
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: var(--textColor);
+        text-decoration: none;
+        height: 60px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+    }
+}
