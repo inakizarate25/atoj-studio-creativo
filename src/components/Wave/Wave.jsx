@@ -9,20 +9,26 @@ const Wave = () => {
 
 
   return (
-    <>
-      <div className="circle">
-        <div className="wave"></div>
+    <div className='circleContainer' >
+      <div className="individualCircle">
+        <div className="circle">
+          <div className="wave"></div>
+        </div>
+        <Porcentaje porcentaje={100} titulo={'Clientes Felices'}/>
       </div>
-     <Porcentaje porcentaje={100} titulo={'Clientes Felices'}/>
-      <div className="circle">
-        <div className="wave"></div>
-      </div>
+      <div className="individualCircle">
+        <div className="circle">
+          <div className="wave"></div>
+        </div>
      <Porcentaje porcentaje={100} titulo={'Marcas Mejoradas'}/>
+     </div>
+     <div className="individualCircle">
       <div className="circle circle2">
         <div className="wave wave2"></div>
       </div>
      <Porcentaje porcentaje={75} titulo={'Tiempo Sin Dormir'}/>
-    </>
+     </div>
+    </div>
   )
 }
 

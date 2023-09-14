@@ -29,27 +29,83 @@ const Home = () => {
         <div className="presentacion">
           <Slide3 />
         </div>
-        <p className="misionValor">Nuestra Misión</p>
-        <div className="marco">
-          <p className="bordearriba">&lt;  &lt;  <BsDot />  &gt;  &gt;</p>
-          <p className="contenido">Logramos el éxito de clientes con soluciones integrales de marketing digital y diseño vanguardista. Fusionamos estética visual y tácticas efectivas, reflejando respeto por cada cliente y buscando su prosperidad en el mundo digital.</p>
-          <p className="bordeabajo">&lt;  &lt;  <BsDot />  &gt;  &gt;</p>        
-        </div>
-        <p className="misionValor">Nuestra Visión</p>
-        <div className="marco">
-          <p className="bordearriba">&lt;  &lt;  <BsDot />  &gt;  &gt;</p>
-          <p className="contenido">Líderes en Marketing Digital, fusionamos diseño y estrategia de manera innovadora. Creando marcas y campañas atractivas, impulsamos el crecimiento de los clientes con soluciones estratégicas que reflejan su identidad.</p>
-          <p className="bordeabajo">&lt;  &lt;  <BsDot />  &gt;  &gt;</p>        
+        <div className="mvcontenedor">
+          <div className="mcontenedor">
+            <p className="misionValor">Nuestra Misión</p>
+            <div className="marco">
+              <p className="bordearriba">&lt;  &lt;  <BsDot />  &gt;  &gt;</p>
+              <p className="contenido">Logramos el éxito de clientes con soluciones integrales de marketing digital y diseño vanguardista. Fusionamos estética visual y tácticas efectivas, reflejando respeto por cada cliente y buscando su prosperidad en el mundo digital.</p>
+              <p className="bordeabajo">&lt;  &lt;  <BsDot />  &gt;  &gt;</p>        
+            </div>
+          </div>
+          <div className="mcontenedor">
+            <p className="misionValor">Nuestra Visión</p>
+            <div className="marco">
+              <p className="bordearriba">&lt;  &lt;  <BsDot />  &gt;  &gt;</p>
+              <p className="contenido">Líderes en Marketing Digital, fusionamos diseño y estrategia de manera innovadora. Creando marcas y campañas atractivas, impulsamos el crecimiento de los clientes con soluciones estratégicas que reflejan su identidad.</p>
+              <p className="bordeabajo">&lt;  &lt;  <BsDot />  &gt;  &gt;</p>        
+            </div>
+          </div>
         </div>
           <Slide2 />
-          <Slide/>
-    
+          <Slide/>   
           <Objetives />
-          <ServiceLink icon={lapiz} content={'Diseño de Logotipo'} url={'/services'} />
-          <ServiceLink icon={idea} content={'Diseño de Contenido'} url={'/services'} />
-          <ServiceLink icon={like} content={'Gestión de redes'} url={'/services'} />
+          <div className="serviciosContenedor">
+            <ServiceLink icon={lapiz} content={'Diseño de Logotipo'} url={'/services'} />
+            <ServiceLink icon={idea} content={'Diseño de Contenido'} url={'/services'} />
+            <ServiceLink icon={like} content={'Gestión de redes'} url={'/services'} />
+          </div>
           <div className="cartel">
             <span>
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
+              Creamos marcas que inspiren en varios paises 
+              <img className="bandera primera" src={B1} alt="B1" /> 
+              <img className="bandera" src={B2} alt="B2" /> 
+              <img className="bandera" src={B3} alt="B3" /> 
+              <img className="bandera" src={B4} alt="B4" /> 
+              <img className="bandera" src={B5} alt="B5" /> 
+              <img className="bandera" src={B6} alt="B6" /> 
               Creamos marcas que inspiren en varios paises 
               <img className="bandera primera" src={B1} alt="B1" /> 
               <img className="bandera" src={B2} alt="B2" /> 

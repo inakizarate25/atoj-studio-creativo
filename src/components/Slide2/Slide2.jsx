@@ -24,7 +24,7 @@ const Slide2 = () => {
         effect={'coverflow'}
         grabCursor={true}
         centeredSlides={false}
-        spaceBetween={0}
+        spaceBetween={100}
         coverflowEffect={{
           rotate: 10,
           stretch: 0,

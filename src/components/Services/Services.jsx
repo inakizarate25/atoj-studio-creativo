@@ -10,7 +10,11 @@ const Services = () => {
       <section id="services">
         <h2>Nuestros Servicios</h2>
         <Separator />
-        <span className='serviceSubtitle'>Descubre nuestra gama de Servicios: Potenciando tu presencia con Diseño Gráfico y Web</span>
+        <div className="serviceSubtitle">
+        <p>Descubre nuestra gama de Servicios:</p>
+        <p>Potenciando tu presencia con Diseño Gráfico y Web</p>
+        </div>
+        <div className="serviciosContenedor">
         <div className="service_Container">
             <h2 className="service_Title">DISEÑO DE LOGOTIPO</h2>
             <ul className="service_Content">
@@ -41,6 +45,7 @@ const Services = () => {
               <li className='listItem'>Informes de desempeño con seguimiento de KPI’s mensual.</li> 
             </ul>
             <button className="service_Button">Contratar</button>
+        </div>
         </div>
       </section>
     </AnimatedPages>

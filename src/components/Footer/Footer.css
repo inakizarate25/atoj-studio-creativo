@@ -2,7 +2,7 @@ footer {
     display: flex;
     align-items: center;
     height: 50px;
-    width: 90%;
+    width: 100%;
     color: var(--mainColor);
 }
 .redes {
@@ -17,4 +17,26 @@ footer {
 .redes a img {
     height: 23px;
     width: 23px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    footer {        
+        height: 100px;
+        width: 100vw;
+    }
+    .redes {
+        height: 100px;
+        gap: 50px;
+        border-top: 3px solid var(--mainColor);
+        background-color: var(--terciaryColor);
+    }
+    .redes a img {
+        height: 35px;
+        width: 35px;
+        transition: transform 0.3s;
+    }
+    .redes a img:hover {
+        transform: scale(1.2)        
+    }
 }

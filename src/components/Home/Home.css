@@ -21,6 +21,13 @@
     font-size: 45px;
 }
 
+.mcontenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .misionValor {
     font-size: 30px;
     margin-bottom: 15px;
@@ -78,8 +85,13 @@
     color: var(--mainColor);
 }
 
+.serviciosContenedor {
+    display: flex;
+    flex-direction: column;    
+}
+
 .serviceContainer {
-    width: 200px;
+    width: 282px;
     height: 256px;
     margin: 50px;
     display: flex;
@@ -118,6 +130,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s;
+}
+
+.serviceButton:hover {
+    transform: scale(1.1);
 }
 
 .icons {
@@ -160,10 +177,79 @@
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    animation: movimientoTexto 30s linear -5s infinite; /* Aplicar la animación al span */
+    animation: movimientoTexto 110s linear -20s infinite; /* Aplicar la animación al span */
   }
 
   .bandera {
     margin: 0 15px;
     border-radius: 10px;
-  }  
+  } 
+  
+  @media screen and (min-width:1024px) {
+
+    .mvcontenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 50px 100px;
+    }  
+    
+    .mcontenedor {
+        width: 100%;
+    }
+
+    .misionValor {
+        margin-bottom: 30px;
+        font-size: 40px;
+    }
+    
+    .marco {
+        border: 1px solid black;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        padding: 45px 30px;    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        color: var(--mainColor);
+        transition: transform 0.3s;
+    }
+
+    .marco:hover {
+        transform: scale(1.1);
+        cursor: default;
+    }
+    
+    .contenido {
+        font-size: 20px;
+    }
+
+    .serviciosContenedor {
+        width: 80vw;
+        height: 400px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .cartel span {
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--font-prinsipal);
+    color: var(--textColor);    
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    animation: movimientoTexto 110s linear -20s infinite; /* Aplicar la animación al span */
+  }
+
+  .cartel {
+    width: 100vw; }
+  }

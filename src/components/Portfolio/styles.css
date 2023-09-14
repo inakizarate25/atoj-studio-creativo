@@ -1,5 +1,5 @@
 #portfolio {    
-  padding: 74px 0 50px 0 ;
+  padding: 60px 0 42px 0 ;
   font-family: var(--font-prinsipal);
   display: flex;
   flex-direction: column;
@@ -22,16 +22,18 @@
   align-items: center;
   gap: 0;
   width: 100%;
+  margin-top: 50px;
 }
 
 .trabajos > article{
   width: 100%;
   max-width: 500px;
-  min-height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  border: 2px solid var(--mainColor);
+  margin: 5px;
 }
 
 article > img {
@@ -40,7 +42,7 @@ article > img {
   position: relative;
   top: 0;
   left: 0;
-  padding: 8px 0;
+  padding: 15px;
 }
 
 .trabajos > article > h3{
@@ -61,7 +63,7 @@ article > img {
 
 @media screen and (min-width: 1024px) {
   #portfolio > h2 {
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 400;
   }
 }

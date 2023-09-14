@@ -21,4 +21,29 @@
   .iconImg {
     position: relative; 
     z-index: 40;
-  } 
+  }
+  
+  @media screen and (min-width:1024px) {
+    .icon{
+      width: 50vw;
+      margin: 30px 0;
+    }
+    
+    .icon::after{
+        content: '';
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        background-color: white; 
+        rotate: 45deg;
+        border: 2px solid white;
+    }
+    
+    .iconImg {
+      position: relative; 
+      z-index: 40;
+      width: 60px;
+      height: 60px;
+    }
+  
+  }

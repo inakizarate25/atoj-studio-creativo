@@ -38,6 +38,7 @@
   text-align: center;
   margin-top: 15px;
   margin-bottom: 0;
+  border-bottom: 2px solid var(--terciaryColor);
 }
 
 .service_Content {
@@ -46,7 +47,7 @@
   margin: 25px 0 40px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
   text-align: start;
   flex-grow: 1;
@@ -77,4 +78,54 @@
   align-items: center;
   line-height: normal;
   font-family: var(--font-secundaria);
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  #services > h2 {
+    font-size: 40px;
+  }
+  
+  .serviceSubtitle {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .service_Container {
+    width: 350px;
+    height: 450px;
+  }
+  
+  .service_Title {
+    font-size: 24px;
+  }
+  
+  .service_Content {
+    width: 80%;
+    height: auto;
+  }
+  
+  .listItem {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .serviciosContenedor {
+    width: 70vw;
+    height: auto;
+  }
+  
+  .service_Button {
+    bottom: -27px;
+    width: 170px;
+    height: 55px;
+    font-size: 20px;
+    transition: transform 0.3s;
+  }
+
+  .service_Button:hover {
+    transform: scale(1.1)
+  }
 }

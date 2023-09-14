@@ -1,6 +1,6 @@
 import './Contact.css'
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast';

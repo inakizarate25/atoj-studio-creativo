@@ -1,19 +1,29 @@
-.integrantes{
+.integrantes {
   width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-image: url(../../assets/fondo3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 50px 0 0 0;
+}
 
-    margin: 50px 0 0 0;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-  }
+.integrantes::before {
+  content: "";
+  background-image: url(../../assets/fondo3.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
   
   .swiper2 {
       width: 300px;
@@ -71,4 +81,29 @@
 .swiper2 .swiper-slide-prev,
 .swiper2 .swiper-slide-next {
   visibility: hidden;
+}
+
+@media screen and (min-width:1024px) {
+
+  .integrantes {
+    height: 800px;
+  }
+
+  .swiper2 {
+    width: 600px;
+  }
+  
+  .integrante {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper2 .swiper-button-next {
+    margin-right: -100px;
+  }
+  .swiper2 .swiper-button-prev {
+    margin-left: -100px;
+  }
 }

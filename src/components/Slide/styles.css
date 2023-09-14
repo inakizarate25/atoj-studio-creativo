@@ -53,3 +53,26 @@
   font-size: 18px;
   font-weight: bolder;
 }
+
+@media screen and (min-width:1024px) {
+  .slide-cont{
+    width: 100vw;
+    height: 800px;
+    margin: 0;  
+  }
+
+  .slide-cont > h2 {
+    font-size: 40px;
+  }
+  .swiper {
+      width: 60%;
+      overflow: visible;
+    }
+    
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 500px;
+      height: 500px;
+    }
+}

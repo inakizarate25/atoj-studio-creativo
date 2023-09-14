@@ -28,7 +28,7 @@ function Header() {
 
   return (
     <header>
-      <Link to={"/"} onClick={closeNavbar} className="logo">
+      <Link to={"/"} onClick={() => closeNavbar("home")} className="logo">
         <img src={logo} alt="atoj studio" />
       </Link>
       <nav ref={navRef}>
