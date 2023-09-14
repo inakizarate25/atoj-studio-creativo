@@ -9,7 +9,7 @@
 }
 @media screen and (min-width: 896px){
   .slide-cont{
-    width: 100%;
+    width: 100vw;
   }
 }
 .slide-cont > h2 {
@@ -56,9 +56,10 @@
 
 @media screen and (min-width:1024px) {
   .slide-cont{
-    width: 100vw;
+    width: 80vw;
     height: 800px;
     margin: 0;  
+    overflow: hidden;
   }
 
   .slide-cont > h2 {

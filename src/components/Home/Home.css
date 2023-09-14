@@ -91,7 +91,7 @@
 }
 
 .serviceContainer {
-    width: 282px;
+    width: 256px;
     height: 256px;
     margin: 50px;
     display: flex;
@@ -251,5 +251,6 @@
   }
 
   .cartel {
-    width: 100vw; }
+ width: 50vw;
+  }
   }

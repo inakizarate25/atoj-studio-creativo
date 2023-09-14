@@ -2,7 +2,7 @@ footer {
     display: flex;
     align-items: center;
     height: 50px;
-    width: 100%;
+    width: 100vw;
     color: var(--mainColor);
 }
 .redes {

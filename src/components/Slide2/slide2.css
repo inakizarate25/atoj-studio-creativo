@@ -1,5 +1,5 @@
 .integrantes {
-  width: 100%;
+  width: 100vw;
   height: 500px;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@
     .integrante {
       background-position: center;
       background-size: cover;
-      width: 90%;
+      width: 70%;
       height: auto;
     }
     
@@ -53,7 +53,7 @@
   height: 61px;  
   position:fixed;
   visibility: visible;
-  margin-left: -45px;
+  margin-left: -40px;
 }
 
 .swiper2 .swiper-button-prev::after {
