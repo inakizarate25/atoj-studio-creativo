@@ -176,12 +176,12 @@
         align-items: center;
         justify-content: center;
         font-size: 28px;
-        cursor: default;
+        cursor:not-allowed;
     }
 
 
     #shop {
-        width: 100%;
+        width: 99vw;
     }
 
     .articulosLista {

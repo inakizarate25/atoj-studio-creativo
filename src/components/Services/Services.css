@@ -6,6 +6,7 @@
   height: 100%;
   width: 100%;
   padding: 60px 42px 10px;
+  margin-bottom: 60px;
   gap: 28px;
 }
 
@@ -84,7 +85,7 @@
 @media screen and (min-width: 1024px) {
 
   #services{
-    width: 99vw;
+    width: 98.7vw;
   }
   
   #services > h2 {

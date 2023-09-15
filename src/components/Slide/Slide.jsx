@@ -12,11 +12,13 @@ import './styles.css';
 import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
 
 import img1 from '../../assets/1.png'
+import img2 from '../../assets/2.png'
 import img3 from '../../assets/3.png'
 import img4 from '../../assets/4.png'
 
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 const Slide = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -69,6 +71,10 @@ const Slide = () => {
   </SwiperSlide>
   <SwiperSlide>
     <img src={img4} loading='lazy'/>
+  </SwiperSlide>
+  <SwiperSlide className='vermas'>
+    <img src={img4} loading='lazy' className='slide-vermas'/>
+    <Link to="/portfolio" className='vermaslink'>Ver mas</Link>
   </SwiperSlide>
 </Swiper> :
 

@@ -76,3 +76,30 @@
 .port2 > img {
   width: 100%;
 }
+
+.vermas {
+position: relative;
+}
+.slide-vermas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.vermaslink{
+  color: var(--mainColor);
+  text-decoration: none;
+  font-size: 28px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 150px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4b67c;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+}
