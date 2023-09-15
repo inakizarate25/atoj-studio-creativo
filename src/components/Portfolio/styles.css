@@ -66,4 +66,8 @@ article > img {
     font-size: 40px;
     font-weight: 400;
   }
+
+  .trabajos{
+    width: 90%;
+  }
 }

@@ -1,4 +1,5 @@
 #shop{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +7,26 @@
     margin-top: 80px;
     padding: 72px 0;
 }
+
+.articulosLista {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.descargables_list h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 50px;
+}
+
 .descargable {
+    margin: 20px;
     width: 153px;
     height: 198px;
     display: flex;
@@ -19,7 +39,7 @@
     gap: 10px;
 }
 .descargable > img {
-    width: 116px;
+    width: 140px;
 
 
 }
@@ -27,7 +47,7 @@
     font-size: 13px;
     font-weight: 400;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 
 
 }
@@ -59,12 +79,29 @@
 }
 
 
+.comprar {
+    position: absolute;
+    bottom: -18px;
+    padding: 7px 10px;
+    background-color: var(--mainColor);
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+.venta {
+    opacity: 0.5;
+}
+
 @media screen and (min-width: 1024px) {
+
     #shop > h2 {
         font-size: 40px;
         font-weight: 400;
     }
     .descargable {
+        margin: 0 30px;
         width: 300px;
         height: 360px;
         display: flex;
@@ -94,11 +131,12 @@
     
     .descargables_list{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap:50px;
-        max-width: 1200px;
+        gap:40px;
+        width: 99vw;
     }
     
     .descargar {
@@ -121,4 +159,44 @@
     .descargar:hover {
         transform: scale(1.1)
     }
+
+
+
+    .comprar {
+        position: absolute;
+        bottom: -28px;
+        background-color: var(--mainColor);
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        color: var(--textColor);
+        text-decoration: none;
+        height: 60px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        cursor: default;
+    }
+
+
+    #shop {
+        width: 100%;
+    }
+
+    .articulosLista {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .descargables_list h2 {
+        margin-top: 50px;
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    
 }

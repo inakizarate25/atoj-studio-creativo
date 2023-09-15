@@ -95,6 +95,9 @@ textarea{
     margin-bottom: auto;
 }
 @media screen and (min-width: 1024px) {
+    #contacto{
+        width: 99vw;
+    }
     form{
         width: 700px;
     }

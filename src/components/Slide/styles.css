@@ -9,7 +9,7 @@
 }
 @media screen and (min-width: 896px){
   .slide-cont{
-    width: 100vw;
+    width: 100%;
   }
 }
 .slide-cont > h2 {

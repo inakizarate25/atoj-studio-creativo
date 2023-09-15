@@ -82,6 +82,10 @@
 
 
 @media screen and (min-width: 1024px) {
+
+  #services{
+    width: 99vw;
+  }
   
   #services > h2 {
     font-size: 40px;
@@ -96,6 +100,7 @@
   .service_Container {
     width: 350px;
     height: 450px;
+    margin: 0 30px;
   }
   
   .service_Title {
@@ -113,7 +118,8 @@
   }
 
   .serviciosContenedor {
-    width: 70vw;
+    justify-content: center;
+    width: 100%;
     height: auto;
   }
   
