@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
-    width: 100%;
+    width: 98vw;
     padding: 60px 42px;
     gap: 28px;
 }

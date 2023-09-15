@@ -50,7 +50,7 @@ const Slide = () => {
     stretch: 0,
     depth: 500,
     modifier: 1,
-    slideShadows: false,
+    slideShadows: true,
   }}
   loop={true}
   pagination={false}
@@ -63,31 +63,31 @@ const Slide = () => {
   className="mySwiper"
 >
   <SwiperSlide>
-    <img src={img1} />
+    <img src={img1} loading='lazy'/>
   </SwiperSlide>
   <SwiperSlide>
-    <img src={img2} />
+    <img src={img2} loading='lazy'/>
   </SwiperSlide>
   <SwiperSlide>
-    <img src={img3} />
+    <img src={img3} loading='lazy'/>
   </SwiperSlide>
   <SwiperSlide>
-    <img src={img4} />
+    <img src={img4} loading='lazy'/>
   </SwiperSlide>
 </Swiper> :
 
 <div className='port-res'>
   <div className='port2'>
-    <img src={img1} />
+    <img src={img1} loading='lazy'/>
   </div>
   <div className='port2'>
-    <img src={img2} />
+    <img src={img2} loading='lazy'/>
   </div>
   <div className='port2'>
-    <img src={img3} />
+    <img src={img3} loading='lazy'/>
   </div>
   <div className='port2'>
-    <img src={img4} />
+    <img src={img4} loading='lazy'/>
   </div>
 </div>
 }

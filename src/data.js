@@ -1,5 +1,5 @@
 import fondo from "./assets/fondo.svg";
-import contenido from "./assets/Rectangle 7.png";
+import contenido from "./assets/Rectangle7.png";
 import buyer from "./assets/Rectangle8.png";
 import copy from "./assets/Rectangle9.png";
 
