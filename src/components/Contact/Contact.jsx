@@ -45,7 +45,7 @@ const sendEmail = (e) => {
       </div>
       <div className="input-group">
         <label htmlFor="mensaje">MENSAJE</label>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <textarea name="messaje" id="mensaje" cols="30" rows="10"></textarea>
       </div>
      <button type="submit" className='btn_contact'>ENVIAR</button>
     
