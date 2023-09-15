@@ -79,6 +79,7 @@ const Slide = () => {
 </Swiper> :
 
 <div className='port-res'>
+  <div className="imgs">
   <div className='port2'>
     <img src={img1} loading='lazy'/>
   </div>
@@ -91,7 +92,10 @@ const Slide = () => {
   <div className='port2'>
     <img src={img4} loading='lazy'/>
   </div>
-</div>
+  </div>
+ 
+  <Link to="/portfolio" className='vermaslink1'>Ver mas</Link>
+ </div>
 }
 
 
