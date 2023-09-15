@@ -19,13 +19,13 @@ const App = () => {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/services" element={<Services/>} />
-        <Route path="/shop" element={<Shop/>} />
-        <Route path="/portfolio" element={<Portfolio/>} />
-        <Route path="/compra" element={<Compra/>} />
-        <Route path="/descargable/:id" element={<Descarga products={products}/>} />
+        <Route exact path="/" element={<Home/>} />
+        <Route exact path="/contact" element={<Contact/>} />
+        <Route exact path="/services" element={<Services/>} />
+        <Route exact path="/shop" element={<Shop/>} />
+        <Route exact path="/portfolio" element={<Portfolio/>} />
+        <Route exact path="/compra" element={<Compra/>} />
+        <Route exact path="/descargable/:id" element={<Descarga products={products}/>} />
         <Route path="*" element={<h2>404 Not found</h2>} />
       </Routes>
       <Footer />
