@@ -1,4 +1,4 @@
-.circleContainer {
+/* .circleContainer {
   width: 100vw;
   height: 100%;
   display: flex;
@@ -21,8 +21,8 @@
     background: linear-gradient( #E9A351, #9291B6);
     border-radius: 50%;
   }
-  .wave::before,
-  .wave::after{
+  .child1,
+  .child2{
     content: "";
     height: 200%;
     width: 200%;
@@ -31,12 +31,12 @@
     left: 50%;
     transform: translate(-50%, -100%);
   }
-  .wave::before{
+  .child1{
     background: linear-gradient(#F1D0AA, #9C9AF0);
     border-radius: 40%;
     animation: animate 7s linear;
   }
-  .wave::after{
+  .child2{
     background-color: #fff;
     border-radius: 45%;
     top: -5%;
@@ -82,4 +82,122 @@
       align-items: center;
     }
   
+  } */
+
+  .circleContainer {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
   }
+  
+  .circle {
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  
+  .wave {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient( #E9A351, #9291B6);
+    border-radius: 50%;
+  }
+  
+  .child1,
+  .child2 {
+    content: "";
+    height: 200%;
+    width: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+  .child1 {
+    background: linear-gradient(#F1D0AA, #9C9AF0);
+    border-radius: 40%;
+  }
+  .child2 {
+    background-color: #fff;
+    border-radius: 45%;
+    top: -5%;
+  }
+  
+
+
+  
+  @keyframes animate {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -100%) rotate(360deg);
+    }
+  }
+
+  .child3,
+  .child4 {
+    content: "";
+    height: 200%;
+    width: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -85%);
+  }
+
+   .child3{
+    background: linear-gradient(#F1D0AA, #9C9AF0);
+    border-radius: 40%;
+   }
+   .child4{
+    background-color: #fff;
+    border-radius: 45%;
+    top: -5%;
+   }
+  
+  @keyframes animate2 {
+    0% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -85%) rotate(360deg);
+    }
+  }
+  
+  /* Aplicar la animación a los elementos con clase .wave y .wave2 */
+
+  .wave-animation {
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-name: animate;
+  }
+  
+  .wave2-animation {
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-name: animate2;
+  }
+  
+
+
+
+  
+
+  @media screen and (min-width:1024px) {
+    .circleContainer {
+      width: 80vw;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
+  
