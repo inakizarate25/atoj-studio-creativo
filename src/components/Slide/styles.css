@@ -53,27 +53,25 @@
   font-size: 18px;
   font-weight: bolder;
 }
-
-@media screen and (min-width:1024px) {
-  .slide-cont{
-    width: 80vw;
-    height: 800px;
-    margin: 0;  
-    overflow: hidden;
-  }
-
-  .slide-cont > h2 {
-    font-size: 40px;
-  }
-  .swiper {
-      width: 60%;
-      overflow: visible;
-    }
-    
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 500px;
-      height: 500px;
-    }
+.port-res{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 95vw;
+}
+.port2{
+  width: 370px;
+  height: 370px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+.port2:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.port2 > img {
+  width: 100%;
 }

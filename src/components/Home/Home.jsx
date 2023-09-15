@@ -1,6 +1,5 @@
 import AnimatedPages from "../AnimatedPages/AnimatedPages"
 import './Home.css'
-
 import ServiceLink from "./serviceLink";
 import Objetives from "../Objetives/objetives";
 import Slide from "../Slide/Slide";
@@ -20,8 +19,8 @@ import B6 from '../../assets/b6.png'
 
 
 
-const Home = () => {
 
+const Home = () => {
 
   return (
     <AnimatedPages>

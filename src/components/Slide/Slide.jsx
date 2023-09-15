@@ -16,46 +16,85 @@ import img2 from '../../assets/2.png'
 import img3 from '../../assets/3.png'
 import img4 from '../../assets/4.png'
 
+
+import React, { useState, useEffect } from 'react';
 const Slide = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // Función para actualizar el estado con el ancho actual del dispositivo
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    // Agrega un evento de escucha para el cambio de tamaño de la ventana
+    window.addEventListener('resize', handleWindowResize);
+
+    // Limpia el evento de escucha cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
   return (
     <>
     <div className='slide-cont'>
     <h2>Portafolio</h2>
-      <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        coverflowEffect={{
-          rotate: 10,
-          stretch: 0,
-          depth: 500,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        loop={true}
-        pagination={false}
-        navigation={true}
-        modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-        autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src={img1} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img2} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img3} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={img4} />
-        </SwiperSlide>
-      </Swiper>
+
+    {
+  windowWidth <= 768 ?   <Swiper
+  effect={'coverflow'}
+  grabCursor={true}
+  centeredSlides={true}
+  slidesPerView={'auto'}
+  coverflowEffect={{
+    rotate: 10,
+    stretch: 0,
+    depth: 500,
+    modifier: 1,
+    slideShadows: false,
+  }}
+  loop={true}
+  pagination={false}
+  navigation={true}
+  modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
+  autoplay={{
+      delay: 3000,
+      disableOnInteraction: false,
+    }}
+  className="mySwiper"
+>
+  <SwiperSlide>
+    <img src={img1} />
+  </SwiperSlide>
+  <SwiperSlide>
+    <img src={img2} />
+  </SwiperSlide>
+  <SwiperSlide>
+    <img src={img3} />
+  </SwiperSlide>
+  <SwiperSlide>
+    <img src={img4} />
+  </SwiperSlide>
+</Swiper> :
+
+<div className='port-res'>
+  <div className='port2'>
+    <img src={img1} />
+  </div>
+  <div className='port2'>
+    <img src={img2} />
+  </div>
+  <div className='port2'>
+    <img src={img3} />
+  </div>
+  <div className='port2'>
+    <img src={img4} />
+  </div>
+</div>
+}
+
+
+
+     
     </div>
    
     </>
