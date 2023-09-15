@@ -12,7 +12,6 @@ import './styles.css';
 import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
 
 import img1 from '../../assets/1.png'
-import img2 from '../../assets/2.png'
 import img3 from '../../assets/3.png'
 import img4 from '../../assets/4.png'
 
@@ -50,7 +49,7 @@ const Slide = () => {
     stretch: 0,
     depth: 500,
     modifier: 1,
-    slideShadows: false,
+    slideShadows: true,
   }}
   loop={true}
   pagination={false}
@@ -63,31 +62,28 @@ const Slide = () => {
   className="mySwiper"
 >
   <SwiperSlide>
-    <img src={img1} />
+    <img src={img1} loading='lazy'/>
   </SwiperSlide>
   <SwiperSlide>
-    <img src={img2} />
+    <img src={img3} loading='lazy'/>
   </SwiperSlide>
   <SwiperSlide>
-    <img src={img3} />
-  </SwiperSlide>
-  <SwiperSlide>
-    <img src={img4} />
+    <img src={img4} loading='lazy'/>
   </SwiperSlide>
 </Swiper> :
 
 <div className='port-res'>
   <div className='port2'>
-    <img src={img1} />
+    <img src={img1} loading='lazy'/>
   </div>
   <div className='port2'>
-    <img src={img2} />
+    <img src={img2} loading='lazy'/>
   </div>
   <div className='port2'>
-    <img src={img3} />
+    <img src={img3} loading='lazy'/>
   </div>
   <div className='port2'>
-    <img src={img4} />
+    <img src={img4} loading='lazy'/>
   </div>
 </div>
 }

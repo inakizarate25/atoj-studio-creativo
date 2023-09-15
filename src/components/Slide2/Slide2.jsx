@@ -58,25 +58,25 @@ const Slide2 = () => {
   className="mySwiper swiper2"
 >
   <SwiperSlide className='integrante'>
-    <img src={img1} />
+    <img src={img1} loading='lazy'/>
   </SwiperSlide>
   <SwiperSlide className='integrante'>
-    <img src={img2} />
+    <img src={img2} loading='lazy'/>
   </SwiperSlide>
   <SwiperSlide className='integrante'>
-    <img src={img3} />
+    <img src={img3} loading='lazy'/>
   </SwiperSlide>
 </Swiper> :
 
 <div className='int-res'>
   <div className='integrante1'>
-    <img src={img1} />
+    <img src={img1} loading='lazy'/>
   </div>
   <div className='integrante1'>
-    <img src={img2} />
+    <img src={img2} loading='lazy'/>
   </div>
   <div className='integrante1'>
-    <img src={img3} />
+    <img src={img3} loading='lazy'/>
   </div>
 </div>
 }
