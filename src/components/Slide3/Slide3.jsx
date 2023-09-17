@@ -1,5 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { FormattedMessage } from 'react-intl';
 // Import Swiper styles
 import 'swiper/css';
 
@@ -22,10 +23,10 @@ const Slide3 = () => {
         modules={[Autoplay]}
         className="mySwiper1"
       >
-        <SwiperSlide className='swiper-slide1'>Compromiso</SwiperSlide>
-        <SwiperSlide className='swiper-slide1'>Eficacia</SwiperSlide>
-        <SwiperSlide className='swiper-slide1'>Puntualidad</SwiperSlide>
-        <SwiperSlide className='swiper-slide1'>Creatividad</SwiperSlide>
+        <SwiperSlide className='swiper-slide1'><FormattedMessage id='home.jumbotron.uno' defaultMessage='Compromiso'/></SwiperSlide>
+        <SwiperSlide className='swiper-slide1'><FormattedMessage id='home.jumbotron.dos' defaultMessage='Eficacia'/></SwiperSlide>
+        <SwiperSlide className='swiper-slide1'><FormattedMessage id='home.jumbotron.tres' defaultMessage='Puntualidad'/></SwiperSlide>
+        <SwiperSlide className='swiper-slide1'><FormattedMessage id='home.jumbotron.cuatro' defaultMessage='Creatividad'/></SwiperSlide>
       </Swiper>
     </div>   
     </>

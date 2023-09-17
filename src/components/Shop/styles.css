@@ -107,16 +107,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        padding: 18px 18px;
+        justify-content: start;
         background-color: #F4B77C;
         position: relative;
         gap: 10px;
     }
     .descargable > img {
         width: 230px;
-        height: 230px;
-    
+        height: 230px;   
     
     }
     .descargable > h3 {

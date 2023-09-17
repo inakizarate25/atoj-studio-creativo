@@ -8,6 +8,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import './styles.css';
 
+import { FormattedMessage } from 'react-intl';
+
 // import required modules
 import { EffectCoverflow, Pagination, Autoplay, Navigation } from 'swiper/modules';
 
@@ -17,7 +19,7 @@ import img3 from '../../assets/3.png'
 import img4 from '../../assets/4.png'
 
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 const Slide = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -38,7 +40,7 @@ const Slide = () => {
   return (
     <>
     <div className='slide-cont'>
-    <h2>Portafolio</h2>
+    <h2><FormattedMessage id='home.portafolio' defaultMessage='Portafolio'/></h2>
 
     {
   windowWidth <= 768 ?   <Swiper
@@ -74,7 +76,7 @@ const Slide = () => {
   </SwiperSlide>
   <SwiperSlide className='vermas'>
     <img src={img4} loading='lazy' className='slide-vermas'/>
-    <Link to="/portfolio" className='vermaslink'>Ver mas</Link>
+    <Link to="/portfolio" className='vermaslink'><FormattedMessage id='home.portafolio.mas' defaultMessage='Ver Más'/></Link>
   </SwiperSlide>
 </Swiper> :
 
@@ -94,7 +96,7 @@ const Slide = () => {
   </div>
   </div>
  
-  <Link to="/portfolio" className='vermaslink1'>Ver mas</Link>
+  <Link to="/portfolio" className='vermaslink1'><FormattedMessage id='home.portafolio.mas' defaultMessage='Ver Más'/></Link>
  </div>
 }
 

@@ -7,6 +7,7 @@ const products = [
   {
     id: 1,
     title: "Plantilla Buyer Persona",
+    enTitle: "Buyer Person Template",
     description: "Descripcion del descargable 3",
     img: buyer,
     gratis: true,
@@ -15,6 +16,7 @@ const products = [
   {
     id: 2,
     title: "Plantillas de Copywriting",
+    enTitle: "Copywriting Templates",
     description: "Descripcion del descargable 5",
     img: copy,
     gratis: true,
@@ -23,6 +25,7 @@ const products = [
   {
     id: 3,
     title: "Plantilla Contenido Mensual",
+    enTitle: "Monthly Content Template",
     description: "Descripcion del descargable 4",
     img: contenido,
     gratis: true,
@@ -31,6 +34,7 @@ const products = [
   {
     id: 4,
     title: "Descargable 1",
+    enTitle: "Downloadable 1",
     description: "Descripcion del descargable 1",
     img: fondo,
     gratis: false,
@@ -38,6 +42,7 @@ const products = [
   {
     id: 5,
     title: "Descargable 2",
+    enTitle: "Downloadable 1",
     description: "Descripcion del descargable 2",
     img: fondo,
     gratis: false,
@@ -45,6 +50,7 @@ const products = [
   {
     id: 6,
     title: "Descargable 6",
+    enTitle: "Downloadable 1",
     description: "Descripcion del descargable 6",
     img: fondo,
     gratis: false,

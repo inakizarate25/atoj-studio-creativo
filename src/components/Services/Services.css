@@ -79,13 +79,14 @@
   align-items: center;
   line-height: normal;
   font-family: var(--font-secundaria);
+  text-decoration: none;
 }
 
 
 @media screen and (min-width: 1024px) {
 
   #services{
-    width: 98.7vw;
+    width: 99vw;
   }
   
   #services > h2 {
