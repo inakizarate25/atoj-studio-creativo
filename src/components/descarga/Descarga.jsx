@@ -5,6 +5,9 @@ import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import { Link, useParams } from "react-router-dom";
 import Separator from "../Separator/Separator";
+import { FormattedMessage } from "react-intl";
+import { langContext } from '../../context/langContext';
+import { useContext } from "react";
 
 const notify = () => toast.success('Email agregado correctamente');
 const Descarga = ({ products }) => {
@@ -13,6 +16,10 @@ const Descarga = ({ products }) => {
   const [email, setEmail] = useState("");
   const [errores, setErrores] = useState({});
   const form = useRef();
+  
+  const { locale } = useContext(langContext);
+
+  
 
   const handleClick = (event) => {
     event.preventDefault();
@@ -65,19 +72,20 @@ const Descarga = ({ products }) => {
   return (
     <AnimatedPages>
       <section id="descarga-sec">
-        <h2>{send ? "¡Felicidades!" : "¡Ya casi es tuyo!"}</h2>
+        <h2>{send ? (<FormattedMessage id='descarga.subtitulo.1' defaultMessage= '¡Felicidades!'/>): (<FormattedMessage id='descarga.subtitulo.2' defaultMessage= '¡Ya casi es tuyo!'/>)}</h2>
         <Separator />
         <span>
           {send ? (
             <div key={product.id} className="msg-desc">
-              <span>¡Que disfrutes tu regalo!</span>
+              <span><FormattedMessage id='descarga.register.1' defaultMessage= '¡Que disfrutes tu regalo!'/></span>
               <p>
-                A través de este <a href={product.link}>LINK</a> podrás obtener
-                tu descargable gratuito
+              <FormattedMessage id='descarga.register.2.1' defaultMessage= 'A través de este '/>
+              <a href={product.link}><FormattedMessage id='descarga.register.link' defaultMessage= 'ENLACE'/></a>
+              <FormattedMessage id='descarga.register.2.2' defaultMessage= ' podrás obtener tu descargable gratuito'/>
               </p>
 
               <Link className="btn_contact back-home" to="/">
-                VOLVER AL HOME
+              <FormattedMessage id='descarga.register.back' defaultMessage= 'VOLVER AL INICIO'/>
               </Link>
             </div>
           ) : (
@@ -90,7 +98,7 @@ const Descarga = ({ products }) => {
         ) : (
           <form ref={form}>
             <div className="input-group">
-              <label htmlFor="nombre">NOMBRE</label>
+              <label htmlFor="nombre"><FormattedMessage id='descarga.name' defaultMessage= 'NOMBRE'/></label>
               <input
                 type="text"
                 name="user_name"
@@ -103,7 +111,7 @@ const Descarga = ({ products }) => {
               {errores.nombre && <p className="error-msg">{errores.nombre}</p>}
             </div>
             <div className="input-group">
-              <label htmlFor="mail">MAIL</label>
+              <label htmlFor="mail"><FormattedMessage id='descarga.mail' defaultMessage= 'MAIL'/></label>
               <input
                 type="email"
                 name="user_email"
@@ -118,7 +126,7 @@ const Descarga = ({ products }) => {
             <input
               type="submit"
               className="btn_contact"
-              value={"CONTINUAR LA COMPRA"}
+              value={locale == 'es-ES' ? "CONTINUAR CON LA DESCARGA" : "CONTINUE TO DOWNLOAD"}
               onClick={handleClick}
             />
           </form>

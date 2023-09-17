@@ -8,6 +8,7 @@ import img5 from '../../assets/image 5.png'
 import img6 from '../../assets/Rectangle 46 (1).png'
 import img7 from '../../assets/Rectangle 46.png'
 import Separator from "../Separator/Separator"
+import { FormattedMessage } from "react-intl"
 
 
 const Portfolio = () => {
@@ -59,7 +60,7 @@ const Portfolio = () => {
   return (
     <AnimatedPages>
       <section id='portfolio'>        
-        <h2>Portafolio</h2>
+        <h2><FormattedMessage id='home.portafolio' defaultMessage= 'Portafolio'/></h2>
         <Separator />
         <section className="trabajos">
           {proyectos.map(proyecto => (

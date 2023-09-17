@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast';
 import Separator from '../Separator/Separator';
+import { FormattedMessage } from 'react-intl';
 const notify = () => toast.success('Mensaje Enviado');
 
 const Contact = () => {
@@ -29,29 +30,28 @@ const sendEmail = (e) => {
   return (
     <AnimatedPages>
   <section id="contacto">
-    <h2>Contacto</h2>
+    <h2><FormattedMessage id='contact.titulo' defaultMessage= 'Contacto'/></h2>
     <Separator />
-    <span>{ send ? "¡Gracias por ponerte en contacto con nosotros!" : "¿Tenés algo para decir? Dejanos tu mensaje o consulta"}</span>
-
+    <span>{ send ? (<FormattedMessage id='contact.subtitulo.1' defaultMessage= '¡Gracias por ponerte en contacto con nosotros!'/>): (<FormattedMessage id='contact.subtitulo.2' defaultMessage= '¿Tenés algo para decir? Dejanos tu mensaje o consulta'/>)}</span>
     {
-      send ? <span className='send_msg'>Pronto alguien de nuestro Staff se pondra en contacto.</span> :  <form ref={form} onSubmit={sendEmail}>
+      send ? <span className='send_msg'><FormattedMessage id='contact.subtitulo.3' defaultMessage= 'Pronto alguien de nuestro Staff se pondra en contacto.'/></span> :  <form ref={form} onSubmit={sendEmail}>
       <div className="input-group">
-        <label htmlFor="nombre">NOMBRE</label>
+        <label htmlFor="nombre"><FormattedMessage id='contact.formName' defaultMessage= 'NOMBRE'/></label>
         <input type="text" name="user_name" id="nombre" required/>
       </div>
       <div className="input-group">
-        <label htmlFor="mail">MAIL</label>
+        <label htmlFor="mail"><FormattedMessage id='contact.formMail' defaultMessage= 'MAIL'/></label>
         <input type="mail" name="user_email" id="mail" required/>
       </div>
       <div className="input-group">
-        <label htmlFor="mensaje">MENSAJE</label>
+        <label htmlFor="mensaje"><FormattedMessage id='contact.formMessage' defaultMessage= 'MENSAJE'/></label>
         <textarea name="message" id="mensaje" cols="30" rows="10"></textarea>
       </div>
-     <button type="submit" className='btn_contact'>ENVIAR</button>
+     <button type="submit" className='btn_contact'><FormattedMessage id='contact.formSend' defaultMessage= 'ENVIAR'/></button>
     
     </form>
     }
-    {send ? <Link to='/' className='btn_contact'>VOLVER AL HOME</Link> : ''}
+    {send ? <Link to='/' className='btn_contact'><FormattedMessage id='contact.formBack' defaultMessage= 'VOLVER A INICIO'/></Link> : ''}
     <Toaster />
     </section>
     </AnimatedPages>

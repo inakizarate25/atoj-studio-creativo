@@ -1,0 +1,83 @@
+{
+    "nav.inicio" : "Home",
+    "nav.portfolio" : "Portfolio",
+    "nav.servicios" : "Services",
+    "nav.shop" : "Shop",
+    "nav.contacto" : "Contact Us",
+
+    "home.jumbotron.uno": "Commitment",
+    "home.jumbotron.dos": "Efficacy",
+    "home.jumbotron.tres": "Punctuality",
+    "home.jumbotron.cuatro": "Creativity",
+
+    "home.mision": "Our Mission",
+    "home.mision.text": "We achieve client success with integrated digital marketing solutions and cutting-edge design. We merge visual aesthetics and effective tactics, reflecting respect for each client and seeking their prosperity in the digital world.",
+    "home.vision": "Our Vision",
+    "home.vision.text": "Leaders in Digital Marketing, we merge design and strategy in an innovative way. By creating engaging brands and campaigns, we drive clients' growth with strategic solutions that reflect their identity.",
+
+    "home.portafolio": "Portfolio",
+    "home.portafolio.mas": "See More",
+    "home.serviceLink": "More Details",
+    "home.animado": "We create brands that inspire in various countries.",
+
+
+    "services.titulo": "Our Services",
+    "services.subtitle1": "Discover our range of services:",
+    "services.subtitle2": "Boosting your presence with Graphic and Web Design",
+    "services.logotipo": "LOGO DESIGN",
+    "services.logotipo.1": "Design or redesign of a logo through the study of the brand personality.",
+    "services.logotipo.2": "Presentation of different online/offline applications.",
+    "services.logotipo.3": "Colour palette.",
+    "services.logotipo.4": "Typography.",
+    "services.logotipo.5": "Brand manual.",
+
+    "services.contenido": "CONTENT DESIGN",
+    "services.contenido.1": "Digital content design for social networks.",
+    "services.contenido.2": "Video editing for reels/tik tok.",
+    "services.contenido.3": "Creation of graphic content (posts, menus, catalogues) for social media campaigns.",
+    "services.contenido.4": "Brochure and print material.",
+
+    "services.redes": "NETWORK MANAGEMENT",
+    "services.redes.1": "Market and competition analysis.",
+    "services.redes.2": "Network study and definition of campaign objectives.",
+    "services.redes.3": "Implementation of content plan and programming.",
+    "services.redes.4": "Performance reports with monthly KPI's monitoring.",
+    "services.link": "Hire",
+
+
+
+
+
+
+    "contact.titulo": "Contact",
+    "contact.subtitulo.1": "Thank you for contacting us!",
+    "contact.subtitulo.2": "Do you have something to say? Leave us your message or query",
+    "contact.subtitulo.3": "Someone from our staff will be in touch soon.",
+    "contact.formName": "NAME",
+    "contact.formMail": "EMAIL",
+    "contact.formMessage": "MESSAJE",
+    "contact.formSend": "SEND",
+    "contact.formBack": "RETURN TO HOME",
+
+
+
+
+
+    "shop.titulo": "Shop",
+    "shop.tituloCompra": "Coming soon...",
+    "shop.descargar": "Download",
+    "shop.comprar": "Buy",
+
+
+
+
+    "descarga.subtitulo.1": "Congratulations!",
+    "descarga.subtitulo.2": "It's almost yours!",
+    "descarga.name": "NAME",
+    "descarga.mail": "EMAIL",
+    "descarga.register.1": "Enjoy your gift!",
+    "descarga.register.2.1": "Through this ",
+    "descarga.register.2.2": " you will be able to get your free downloadable",
+    "descarga.register.back": "RETURN TO HOME",
+    "descarga.register.link": "LINK"
+}
