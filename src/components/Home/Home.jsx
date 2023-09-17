@@ -34,6 +34,7 @@ const Home = () => {
         <div className="presentacion">
           <Slide3 />
         </div>
+        <h1>Atoj Studio Creativo</h1>
         <div className="mvcontenedor">
           <div className="mcontenedor">
             <p className="misionValor"><FormattedMessage id='home.mision' defaultMessage='Nuestra Misión'/></p>

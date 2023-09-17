@@ -7,7 +7,10 @@
     width: 100%;
     overflow: hidden;
 }
-
+#home > h1{
+    visibility: hidden;
+    opacity: 0;
+}
 .presentacion {
     display: flex;
     width:100%;
