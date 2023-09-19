@@ -38,7 +38,7 @@
 
 article > img {
   height: 200px;
-  aspect-ratio: 16/9;
+  max-width: 100%;
   position: relative;
   top: 0;
   left: 0;

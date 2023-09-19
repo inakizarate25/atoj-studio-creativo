@@ -63,63 +63,7 @@ const Home = () => {
           </div>
           <div className="cartel">
             <span>
-            <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/> 
-              <img className="bandera primera" src={B1} alt="B1" /> 
-              <img className="bandera" src={B2} alt="B2" /> 
-              <img className="bandera" src={B3} alt="B3" /> 
-              <img className="bandera" src={B4} alt="B4" /> 
-              <img className="bandera" src={B5} alt="B5" /> 
-              <img className="bandera" src={B6} alt="B6" /> 
-              <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/> 
-              <img className="bandera primera" src={B1} alt="B1" /> 
-              <img className="bandera" src={B2} alt="B2" /> 
-              <img className="bandera" src={B3} alt="B3" /> 
-              <img className="bandera" src={B4} alt="B4" /> 
-              <img className="bandera" src={B5} alt="B5" /> 
-              <img className="bandera" src={B6} alt="B6" /> 
-              <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/>
-              <img className="bandera primera" src={B1} alt="B1" /> 
-              <img className="bandera" src={B2} alt="B2" /> 
-              <img className="bandera" src={B3} alt="B3" /> 
-              <img className="bandera" src={B4} alt="B4" /> 
-              <img className="bandera" src={B5} alt="B5" /> 
-              <img className="bandera" src={B6} alt="B6" /> 
-              <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/> 
-              <img className="bandera primera" src={B1} alt="B1" /> 
-              <img className="bandera" src={B2} alt="B2" /> 
-              <img className="bandera" src={B3} alt="B3" /> 
-              <img className="bandera" src={B4} alt="B4" /> 
-              <img className="bandera" src={B5} alt="B5" /> 
-              <img className="bandera" src={B6} alt="B6" /> 
-              <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/>
-              <img className="bandera primera" src={B1} alt="B1" /> 
-              <img className="bandera" src={B2} alt="B2" /> 
-              <img className="bandera" src={B3} alt="B3" /> 
-              <img className="bandera" src={B4} alt="B4" /> 
-              <img className="bandera" src={B5} alt="B5" /> 
-              <img className="bandera" src={B6} alt="B6" /> 
-              <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/> 
-              <img className="bandera primera" src={B1} alt="B1" /> 
-              <img className="bandera" src={B2} alt="B2" /> 
-              <img className="bandera" src={B3} alt="B3" /> 
-              <img className="bandera" src={B4} alt="B4" /> 
-              <img className="bandera" src={B5} alt="B5" /> 
-              <img className="bandera" src={B6} alt="B6" /> 
-              <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/> 
-              <img className="bandera primera" src={B1} alt="B1" /> 
-              <img className="bandera" src={B2} alt="B2" /> 
-              <img className="bandera" src={B3} alt="B3" /> 
-              <img className="bandera" src={B4} alt="B4" /> 
-              <img className="bandera" src={B5} alt="B5" /> 
-              <img className="bandera" src={B6} alt="B6" /> 
-              <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/> 
-              <img className="bandera primera" src={B1} alt="B1" /> 
-              <img className="bandera" src={B2} alt="B2" /> 
-              <img className="bandera" src={B3} alt="B3" /> 
-              <img className="bandera" src={B4} alt="B4" /> 
-              <img className="bandera" src={B5} alt="B5" /> 
-              <img className="bandera" src={B6} alt="B6" /> 
-              <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios paises'/>
+            <FormattedMessage id='home.animado' defaultMessage= 'Creamos marcas que inspiren en varios países'/> 
               <img className="bandera primera" src={B1} alt="B1" /> 
               <img className="bandera" src={B2} alt="B2" /> 
               <img className="bandera" src={B3} alt="B3" /> 

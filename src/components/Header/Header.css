@@ -84,10 +84,6 @@ header .nav-btn {
 	align-items: center;
 	justify-content: center;
 }
-
-.last{
-	border-bottom: none;
-}
 .selected {
 
 	color: var(--secondaryColor);

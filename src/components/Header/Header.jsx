@@ -73,7 +73,7 @@ function Header() {
         </Link>
         <Link
           to={"/shop"}
-          className={selectedLink === "shop" ? "selected" : "active last"}
+          className={selectedLink === "shop" ? "selected" : "active"}
           onClick={() => closeNavbar("shop")}
         >
         <FormattedMessage id='nav.shop' defaultMessage='Shop'/>

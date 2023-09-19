@@ -159,17 +159,18 @@
   }
   
   .cartel {
-    width: 345px;
+    width: 90vw;
     height: 57px;
     margin: 30px 0;
     color: var(--textColor);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Para ocultar el desbordamiento del texto */
+    overflow: hidden;
   }
   
   .cartel span {
+    width: 225vw;
     font-size: 30px;
     font-weight: 700;
     font-family: var(--font-prinsipal);
@@ -181,7 +182,7 @@
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    animation: movimientoTexto 110s linear -20s infinite; /* Aplicar la animación al span */
+    animation: movimientoTexto 12s linear infinite 0s;
   }
 
   .bandera {
@@ -242,6 +243,7 @@
         justify-content: space-evenly;
     }
     .cartel span {
+    width: 90vw;
     font-size: 30px;
     font-weight: 700;
     font-family: var(--font-prinsipal);
@@ -253,10 +255,9 @@
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    animation: movimientoTexto 110s linear -20s infinite; /* Aplicar la animación al span */
   }
 
   .cartel {
- width: 50vw;
+    width: 50vw;
   }
   }
